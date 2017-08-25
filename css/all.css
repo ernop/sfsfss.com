@@ -29,6 +29,7 @@ margin-right:12px;
 font-size:2.0em;
 background-color:lightblue;
 float:left;
+white-space:nowrap
 }
 
 
@@ -87,7 +88,7 @@ i {font-size:18px;}
 
 table {width:100%;}
 
-td {padding:3px 3px; line-height:1.4em;}
+td {padding:3px 3px; line-height:1.4em;vertical-align:top;}
 
 table.dotted{margin-bottom:20px;}
 
