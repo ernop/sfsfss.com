@@ -3,47 +3,137 @@
     <link rel="stylesheet" href="css/all.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Francisco Science Fiction Short Story Reading Group</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 </head>
 <body>
 <div class="container">
 
+<script>
+function randrange(n){
+    var r  = Math.floor(Math.random()*n);
+    return r
+}
 
-<table class=cl>
-<tr><td colspan=2><center><h2 style="line-height:1em;width:100%;margin-top:5px;">San Francisco Science Fiction Short Story Reading Group</h2></center></td>
-</tr>
-<tr><td>
-<h2>What</h2>
-A reading group for short science fiction stories and other science interests, space travel and exploration, AI, robots, technology &amp; civilization, etc.
-</td></tr>
+function get(n){
+    var el = inputs[n];
+    var sp = el.split(' ');
+    inputs.splice(n,1);
+    var res;
+    if (sp.length==1){
+        res = el;
+    }
+    else{
+        res=sp[0];
+        inputs.push(sp[1]);
+    }
+    return res;
+}
 
-<tr><td><h2>When</h2>
-Every Week<br>Wednesday Evenings, 7-8 pm</td>
-<tr><td>
-<h2>Where</h2>
-<div class=ib><b>Kaffehaus</b>, San Mateo<br>92 E 3rd Ave San Mateo, CA 94401<br>Between SF &amp; Palo Alto<br>37.564032, -122.324278<br><a href="https://map.what3words.com/torch.brand.food">torch.brand.food</a><br>Free parking<br>Caltrain 5 minutes walking
+
+var inputs = "";
+
+$(function(){
+    function g(){
+        var res="";
+        inputs= ["San Francisco", "Science Fiction", "Short Story"];
+        while (inputs.length>0){
+            var r = randrange(inputs.length);
+            var word = get(r);
+            res=res+word+" ";
+        }
+        res=res+' Reading Group';
+        return res;
+    }
+        //$("#title").text(g());
+        //$("title").text(g());
+});
+
+</script>
+
+
+
+<div class="row">
+
+<center><h2 id="title" style="float:left;line-height:1em;width:100%;margin-top:5px;">San Francisco Science Fiction Short Story Reading Group</h2></center>
 </div>
+
+<table style="width:100%;">
 <tr>
-<td colspan=2>
+<tr><td><h2>What</h2>
+We get together every week and discuss a short science fiction story.
+<td rowspan=5><img src=sfsfss.jpg height=300px;>
+<tr><td><h2>When</h2>
+Every Week<br>Wednesday Evenings, 7-8 pm
+<tr><td><h2>Where</h2>
+<div class=ib><b>Kaffehaus</b>, San Mateo<br>92 E 3rd Ave San Mateo, CA 94401<br>Between SF &amp; Palo Alto<br>37.564032, -122.324278<br><a href="https://map.what3words.com/torch.brand.food">torch.brand.food</a><br>Free parking<br>Caltrain 5 minutes walking
+</table>
 <h2>Reading List</h2>
 <table style="width:100%;margin-right:15px;" class="cl dotted" cellpadding=0 cellspacing=0>
-<!--http://will.tip.dhappy.org/blog/Compression%20Trees/.../book/by/Greg%20Egan/Learning%20To%20Be%20Me/ 6k "The Jewel"-->
-<!--Greg_Egan_-_Luminous 12.6k Great!-->
 <tr>
-<th>Date</th><th><a href="stories">Story</a></th><th>Author</th><th>Year</th><th>Link</th><th>Length (words)</th><th>Number
+<th>Date</th><th><a href="stories">Story</a></th><th>Author</th><th>Year</th><th>Link</th><th>Length (words)</th><th>Number</th><th>&nbsp;&nbsp;Score</th>
 </tr>
+<tr class='future-meeting'>
+<td>Future<td>For Want of a Nail<td>Mary Robinette Kowal<td>2011<td><a href="http://maryrobinettekowal.com/journal/for-want-of-a-nail-is-a-hugo-nominee/">Html</a><td>7300<td>
+</tr>
+<tr class='future-meeting'>
+<td>Future<td>Sky<td>RA Lafferty<td>1972<td><a href="http://www.sfsfss.com/stories/Hugo%201972%20Nominee%20Short%20Story%20-%20R.%20A.%20Lafferty%20-%20Sky.htm">Html</a><td>4500<td>
+</tr>
+<tr class='future-meeting'>
+<td>Future<td>Go Starless in the Night<td>Roger Zelazny<td>1979<td><a href="http://www.sfsfss.com/stories/go-starless.html">Html</a><td>2400<td>
+</tr>
+<!--<tr class='future-meeting'>
+<td>Future<td>Bruce Sterling<td>Taklamakan<td><td><td><td>
+</tr>-->
+<tr class='future-meeting'>
+<td>Future<td>Melancholy Elephants<td>Spider Robinson<td>1982<td><a href="http://www.sfsfss.com/stories/Spider_Robinson_-_Melancholy_Elephants.pdf">Pdf</a><td>10 pages<td>
+</tr>
+<tr class='future-meeting'>
+<td>March 28, 2018<td>David D Levine<td>Tk'tk'tk<td>2006<td><a href="http://www.sfsfss.com/stories/Hugo_2006_Winner_Short_Story_-_David_D._Levine_-_Tk'tk'tk.htm">Html</a><td>6600<td>31
+</tr>
+<tr class='future-meeting'>
+<td>March 21, 2018<td>Tad Williams<td>The Tenth Muse<td>2009<td><a href="http://www.starshipsofa.com/blog/2010/11/23/aural-delights-no-164-tad-williams/">Audio<td>60 minutes<td>30
+</tr>
+<tr class='next-meeting'>
+<td>March 14, 2018<td>Annihilation<td>Alex Garland<td>2018<td>Movie<td>120 minutes<td>29
+</tr>
+<tr>
+<td>March 7, 2018<td>Jamie Wahls<td>Utopia, LOL?<td>2017<td><a href="http://strangehorizons.com/fiction/utopia-lol/">Html</a><td>5000<td>28<td><span class="score" title="4/5. Good story, good pacing, lots more to think about than first meets the eye. Reads like the author is aware of 'The Age of Em' by Robin Hanson.  We also suspected he may be a Roblox player!">A</span>
+</tr><!-- ef ck vr lw as gw -->
 
-
-<tr class="future-meeting">
-<td>January 10, 2018<td>Whiptail<td>Robert Reed<td>1998<td><a href="stories/new/Robert_Reed_-_Whiptail.html">Html</a><td>6700<td>20
+<tr>
+<td>February 28, 2018<td>Birthdays<td>Fred Saberhagen<td>1976<td><a href="http://www.sfsfss.com/stories/Fred_Saberhagen_-_Birthdays.htm">Html</a><td>15500<td>27<td><span class="score" title="4/7. Pretty long with a cruel, chuunibyou/13 year old boy style ending.  But there *were* lots of interesting bits and things to discuss.">A</span>
+</tr><!--ef ck lw as -->
+<tr>
+<td>February 21, 2018<td>Forgetfulness<td>Don A Stuart<td>1937<td><a href="http://www.sfsfss.com/stories/forgetfulness%20-%20don%20a%20stuart.html">Html</a><td>10700<td>26<td><span class="score" title="4/6.  an epic myth set in the future with some memorable images.  the portrayal of thoughts on colonialism is more balanced than most people might imagine existed in 1937.">A</span>
 </tr>
-<tr class="future-meeting">
-<td>January 3, 2018<td>The Persistence of Vision<td>John Varley<td>1978<td><a href="stories/new/persistence-of-vision.html">Html</a><td>20000<td>19
+<tr>
+<td>February 14, 2018<td>The Tale of the Wicked<td>John Scalzi<td>2013<td><a href="http://www.sfsfss.com/stories/the-tale-of-the-wicked.html">Html</a><td>7800<td>25<td><span class="score" title="4/7.  well-plotted interesting tale of spaceships which 'get religion'.  The more you think about it the more there is going on.  It's somewhat of a fantasy/morality tale.  One sfnal element is that AIs have stronger ability to prove trustworthiness due to omnipresence, which allows even enemies to deal with each other better than humans.">A</span>
 </tr>
-<tr class="future-meeting">
-<td>December 13, 2018<td>Second Game<td>Katherine MacLean &amp; Charles V De Vet<td>1958<td><a href="stories/new/SecondGame.htm">Html</a><td>6700<td>18
+<tr>
+<td>February 7, 2018<td>What Have I Done<td>Mark Clifton<td>1952<td><a href="stories/What Have I Done - Mark Clifton.htm">Html</a><td>6800<td>24
+<td><span class="score" title="4/6.  50s alien invasion tale with some memorable meta elements.">A</a></span><span class="score" title="Enjoyable, especially the 1950s slang. Somewhat predictable, and the pacing becomes too fast towards the end. Makes some unjustified assumptions and leaves too many points open. B">B</a></span>
 </tr>
-<tr class="next-meeting">
-<td>December 6, 2017<td>Videostar<td>Walter John Williams<td>1986<td><a href="stories/new/videostar.html">Html</a><td>6300<td>17
+<tr>
+<td>January 31, 2018<td>Nine Lives<td>Ursula K Leguin<td>1969<td><a href="http://www.baen.com/Chapters/9781625791405/9781625791405___2.htm">Html<td>10700<td>23
+<td><span class="score" title="4/5. Beautifully written and interconnected story about identity">A</a></span><span class="score" title="Very well written, literary story. Raises good ideas for discussion, but not very plausible. Good pacing. A">B</a></span>
+</tr>
+<tr>
+<td>January 24, 2018<td>Colosseum<td>Blake Stone-Banks<td>2017<td><a href="https://epochemagazine.org/fiction-colosseum-1a887daf7255">Html</a><td>8500<br>35m<td>22
+</tr>
+<tr>
+<td>January 17, 2018<td>Blood Music<td>Greg Bear<td>1983<td><a href="http://www.baen.com/Chapters/9781625791153/9781625791153___2.htm">Html</a><td>9000<td>21
+</tr>
+<tr>
+<td>January 10, 2018<td>A Billion Eves<td>Robert Reed<td>2006<td><a href="http://will.tip.dhappy.org/blog/Porn%20Recommender/.../book/by/Robert%20Reed/A%20Billion%20Eves/Robert%20Reed%20-%20A%20Billion%20Eves.html">Html</a><td>22900<td>20<td><span class="score" title="4/6. Fascinating world, but some elements could have been explored even more.">A</a>
+</tr>
+<tr>
+<td>January 3, 2018<td>The Persistence of Vision<td>John Varley<td>1978<td><a href="stories/new/persistence-of-vision.html">Html</a><td>20000<td>19<td><span class="score" title="4/5.  Rightfully famous.  Unique voice exploring a strange world.">A</a>
+</tr>
+<tr>
+<td>December 13, 2018<td>Second Game<td>Katherine MacLean &amp; Charles V De Vet<td>1958<td><a href="stories/new/SecondGame.htm">Html</a><td>16200<td>18
+</tr>
+<tr>
+<td>December 6, 2017<td>Videostar<td>Walter John Williams<td>1986<td><a href="stories/new/videostar.html">Html</a><td>12400<td>17<td><span class="score" title="4/6.  Early cyberpunk; the world took a different path.  There is lots to discuss about character & motivation.">A</a>
 </tr>
 <tr>
 <td>November 29, 2017<td>All the Birds of Hell<td>Tanith Lee<td>1998<td><a href="stories/new/AllTheBirdsOfHell.html">Html</a><td>8300<td>16
@@ -58,7 +148,7 @@ Every Week<br>Wednesday Evenings, 7-8 pm</td>
 <td> November 15, 2017<td>The Things<td>Peter Watts<td>2010<td><a href="http://clarkesworldmagazine.com/watts_01_10/">Html</a><br><a href="http://clarkesworldmagazine.com/audio_01_10">mp3</a><td>6800<br>53 minutes<td>14
 </tr>
 <tr>
-<td>November 8, 2017<td>Little Faces<td>Vonda N. McIntyre<td>2010<td><a href="http://will.tip.dhappy.org/blog/Porn%20Recommender/.../book/by/Vonda%20N.%20McIntyre/Little%20Faces/Vonda%20N.%20McIntyre%20-%20Little%20Faces.html">Html</a><br><a href="http://strangehorizons.podbean.com/e/little-faces-by-vonda-n-mcintyre-read-by-anaea-lay/">Mp3</a><td>15300<br>93 minutes<td>13
+<td>November 8, 2017<td>Little Faces<td>Vonda N. McIntyre<td>2010<td><a href="http://will.tip.dhappy.org/blog/Porn%20Recommender/.../book/by/Vonda%20N.%20McIntyre/Little%20Faces/Vonda%20N.%20McIntyre%20-%20Little%20Faces.html">Html</a><br><a href="http://strangehorizons.podbean.com/e/little-faces-by-vonda-n-mcintyre-read-by-anaea-lay/">Mp3</a><td>15300<br>93 minutes<td>13<td><span class="score" title="Absolutely original and fascinating story. Introduces several unique ideas and describes them very well. Difficult to fathom how the author was even able to come up with the concepts this story focuses on. One of my favorites. A+">B</a></span>
 </tr>
 <tr>
 <td>October 31, 2017<br>(First Contact)<td>Ambassador<br>The Game of Rat and Dragon<td>Peter Watts<br>Cordwaiter Smith<td>1954<br>2000<td><a href="http://www.rifters.com/real/shorts/PeterWatts_Ambassador.pdf">Pdf</a><br><a href="https://www.baen.com/Chapters/9781625791207/9781625791207___3.htm">Html</a><td>3500<br>5700<td>12
@@ -71,7 +161,7 @@ Every Week<br>Wednesday Evenings, 7-8 pm</td>
 <td>October 17, 2017<td>I, Robot<td>Cory Doctorow<td>2005<td><a href="http://www.infinitematrix.net/stories/shorts/i-robot.html">Html</a><td>15400<td>10<!-- ef sy lr vr aa -->
 </tr>
 <tr>
-<td>October 10, 2017<td>The Exterminator's Want Ad<td>Bruce Sterling<td>2010<td><a href="https://www.shareable.net/blog/the-exterminators-want-ad">Html</a><td>4300<td>9<!--5 ef sy vr ch lw -->
+<td>October 10, 2017<td>The Exterminator's Want Ad<td>Bruce Sterling<td>2010<td><a href="https://www.shareable.net/blog/the-exterminators-want-ad">Html</a><td>4300<td>9<!--5 ef sy vr ch lw --><td><span class="score" title="4/5. Great story, tons to talk about and debate, and lots of great little ideas dropped everywhere.  Interesting voice.">A</span>
 </tr>
 <tr>
 <td>October 3, 2017
@@ -106,7 +196,24 @@ And I Show you how Deep the Rabbit Hole Goes
 
 </tr>
 <!--
+score key
+A=Ernie
+B=V
+-->
+
+
+<!--
 You have found the backup stories section!
+
+http://blog.omphalosbookreviews.com/?p=588
+
+stanislaw lem
+heinlein - requiem
+lovecraft
+eventually read beyond the black river
+
+http://will.tip.dhappy.org/blog/Compression%20Trees/.../book/by/Greg%20Egan/Learning%20To%20Be%20Me/ 6k "The Jewel"
+Greg_Egan_-_Luminous 12.6k Great!
 
 ==short ==
 https://www.d.umn.edu/~tbacig/cst1010/chs/ellison.html 4400
@@ -130,9 +237,6 @@ https://www.salon.com/2004/11/15/andas_game/
 done:
 http://www.tabula-rasa.info/MirrorDanse/WorldAccordingToKipling.html X? Not really SF? 8400
 
-hmm:
-https://www.baen.com/Chapters/9781625791207/9781625791207___3.htm rat and dragon 5700
-
 ideas:
 https://gist.github.com/tijptjik/e8b6401e64784075864cedc2f096a994
 
@@ -146,41 +250,40 @@ http://maryrobinettekowal.com/journal/for-want-of-a-nail-is-a-hugo-nominee/ 7k
 minla's flowers
 https://www.youtube.com/watch?v=Xgx2Zhp3O8k 2:45 hours
 
-Verthandi's ring 16k
-
 legions in time 9200
 http://will.tip.dhappy.org/blog/Porn%20Recommender/.../book/Michael%20Swanwick%20-%20Legions%20In%20Time/Michael%20Swanwick%20-%20Legions%20In%20Time.html
+
+9000
+faust
+http://www.sfsfss.com/stories/Tenn,%20William%20-%20Bernie%20the%20Faust.html
+
+2600
+zelazny
+go starless into hte night
 
 -->
 
 
-
 </table>
 
-</dl>
+<div class="row">
 
-
-</tr>
-
-<tr><td>
 <h2>Contact</h2>
-<a href="https://join.slack.com/t/sfsfss/shared_invite/MjI1OTMyODAxOTM5LTE1MDI2NDY5MzctNGYwZjA3NDEyMQ">Join the slack group</a>
-<br>Or contact: ernestfrench@gmail.com
-</td></tr>
-
-<tr>
-<td>
-<h2>About</h2>
-We're a group of people who are interested in the future &amp; SF.  About me: My favorite SF authors these days are China Mieville, Charles Stross, Greg Egan, Neal Stephenson, Stephen Baxter, &amp; Peter Watts.
-Past favs are Iain M Banks, Octavia Butler, RA Lafferty, Robert Sheckley, &amp; Robert Heinlein.<br>Last modified: November 5, 2017
-</td>
-<tr><td colspan=2>
-
-</td></tr>
-
-
-</table>
+<!--<a href="https://join.slack.com/t/sfsfss/shared_invite/MjI1OTMyODAxOTM5LTE1MDI2NDY5MzctNGYwZjA3NDEyMQ">Join the slack group</a>-->
+<a href=https://www.meetup.com/San-Mateo-Sci-Fi-Reading-Group/>Our Meetup group!</a>
+<br>contact: ernestfrench@gmail.com
 </div>
+<div class="row">
+<h2>About</h2>
+<div style="width:50%;margin-right:40%;">
+We get together every week in a coffee shop to discuss a science fiction story. We've been meeting for about 6 months and have had a good time covering a wide range of stories. My personal favorites are Charles Stross, Iain Banks &amp; people like that, but we also read that weird 70s SF from John Varley, and go back to the 50s sometimes too.
 
+<p>The spot is basically a cafe with cakes, coffee, but it also has craft beers.</p>
+<p>The earliest story we've read comes from 1937, and the most recent from 2017.
+<p>Story submissions are open - we want ones which are between 5 and 25k words, and have multiple things to discuss.  It helps if there is some mystery in the intepretation of what the story means.  Also, finding ones which deal with technology more specifically would be interesting, too! (rather than clearly sociological/biological ones)
 
+<p>Last Modified February 20, 2018</p>
+</div>
+</div>
+</div>
 </body></html>
