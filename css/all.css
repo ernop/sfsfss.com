@@ -1,0 +1,156 @@
+@media only screen and (max-width: 978px) {
+    .container {
+      width:95%;
+      margin:0;
+    }
+}
+@media only screen and (min-width: 978px) {
+    .container {
+      width:95%;
+    }
+}
+.container{margin-top:0;}
+
+html{background:white no-repeat bottom right;color:black}
+body{font:normal medium 'Gill Sans','Gill Sans MT','Ikarius ADF','Candara','Jara','sans-serif';margin-top:0;margin-bottom:10px;}
+
+h1 {font-size:55px; margin-top:0;}
+
+h2{
+display:inline-block;
+padding:10px;
+border-radius:9px;
+border:3px solid black;
+box-shadow:3px 4px 2px orange;
+margin:3px;
+margin-top:0;
+margin-bottom:12px;
+margin-right:12px;
+font-size:2.0em;
+background-color:lightblue;
+float:left;
+}
+
+
+#tablehead
+{
+  background-color:#CC5555;
+  font-size:17px;
+}
+
+#tablecell
+{
+  background-color:#EEEEEE;
+  font-size:14px;
+}
+
+#info
+{
+  color:#EE4455;
+}
+
+.label
+{
+  background-color:#DD9999;
+  font-size:2em;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+	line-height:1.5em;
+  display:inline-block;
+  padding:0px 10px;
+}
+
+.block{
+	clear:both;
+  border:3px solid green;
+  display: inline-block;
+  padding:9px;
+  margin:6px;
+    float:left;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+.block_nowidth{
+  border:3px solid green;
+  display: inline-block;
+  padding:4px;
+  margin:3px;
+  float:left;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+i {font-size:18px;}
+
+.cl{clear:left;}
+
+td {padding:3px 3px; line-height:1.4em;vertical-align:top;}
+
+table.dotted{margin-bottom:20px;}
+
+table.dotted tr:first-child td{
+	border-top:2px dotted grey;
+}
+
+table.dotted th{
+	border-bottom:2px dotted grey;
+}
+
+table.dotted tr td:first-child{
+	border-left:2px dotted grey;
+	border-bottom:2px dotted grey;
+	border-right:2px dotted grey;
+}
+
+table.dotted tr td{
+	border-bottom:2px dotted grey;
+	border-right:2px dotted grey;
+	text-align:center;
+}
+
+td {text-align:left;}
+
+li{list-style-position: inside;}
+
+
+.next-meeting td{ background-color:lightgreen;text-shadow:rgba(0,0,0,0.498039) 0px 0px 5px;font-size:1.4em;}
+.future-meeting td{ background-color:powderblue;color:rgba(0,0,0,0.6);}
+
+.ib {display:inline-block;}
+
+.row{float:left;margin-top:10px; width:100%;}
+
+.score{cursor:pointer;border:5px dashed #006400;border-radius:2px;margin-right:7px;margin-left:7px;display:inline-block;padding:7px;line-height:1em;}
+
+.bar{color:blue;display:inline-block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
