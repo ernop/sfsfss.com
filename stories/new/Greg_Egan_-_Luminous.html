@@ -1,0 +1,1975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!-- MKM Stylesheet v.3.05 -(02-02-07) -->
+  <style type="text/css">
+/*<![CDATA[*/
+body {
+font-family: "Century Schoolbook", "Times New Roman", serif;
+font-size: 125%; margin-left: 6%; margin-right: 6%; }
+h1 { font-size: 240% ;
+font-style: normal ;
+font-variant: normal ;
+text-align: center ;
+margin-top: 2em ;
+font-weight: 700 ; }
+h2 { font-size: 205% ;
+font-style: italic;
+font-variant: normal ;
+margin-top: 0em ;
+text-align: center ; }
+h3 { font-style: normal;
+font-variant: normal ;
+font-size: 140% ;
+font-weight: 600 ;
+margin-top: 1em ;
+text-align: center ;
+background: transparent;
+color: #cc0000; }
+h4 { font-size: 100% ;
+font-style: normal;
+font-variant: normal ;
+margin-top: 1em ;
+margin-bottom: 1em ;
+text-align: center ;}
+h5 { font-size: 150% ;
+font-weight: 700 ;
+text-align: center ; }
+h6 { font-size: 130% ;
+font-variant: small-caps ;
+font-weight: 600 ;
+margin-top: 2em ;
+text-align: center ; }
+.em { font-style: italic; font-weight: 600 ; background: transparent; color: #b10000; }
+p {margin-top: 0.25em ;
+margin-bottom: 0.25em ;
+text-indent: 1.3em ;
+line-height: 110% ; }
+p.right {margin-top: 0.25em ;
+margin-bottom: 0.25em ;
+text-indent: 0em ;
+line-height: 110% ; }
+p.noindent {margin-top: 0.25em ;
+margin-bottom: 0.25em ;
+text-indent: 0em ;
+line-height: 110% ; }
+p.chapter {margin-top: 0.25em ;
+margin-bottom: 0.25em ;
+text-align:left;
+text-indent: 20em ;
+line-height: 110% ; }
+p.chapter:first-letter
+{
+margin-top:.25em; margin-bottom:.25em;
+font-size:180%;
+background: transparent;
+color: #cc0000; }
+p.first
+{
+margin-top:.25em; margin-bottom:.25em;
+text-align:justify; text-indent:0px;
+}
+p.first:first-letter {
+float:left; margin-right:.1em;
+font-size:400%;
+background: transparent;
+color: #cc0000; }
+p.chapter {margin-top: 0.25em ;
+margin-bottom: 0.25em ;
+text-align:left;
+text-indent: 10em ;
+line-height: 110% ; }
+p.section
+{
+margin-top:.25em; margin-bottom:.25em;
+text-align:justify; text-indent:0px; }
+p.section:first-letter {
+float:left; margin-right:.05em;
+font-size:140%;
+background: transparent;
+color: #cc0000; }
+a:link { background: transparent; color: #ff4500; text-decoration: none; }
+a:visited { background: transparent; color: #75003f; text-decoration: none; }
+a:hover { background: transparent; color: #b22222; }
+a:active { background: transparent; color: #8a1480; }
+.noborder { border-style: none}
+div { margin-top: 2em ;
+margin-bottom: 2em ; }
+.nava {
+font-family: verdana, sans-serif;
+background: transparent;
+border-style: solid;
+border-width: thin;
+border-color: #ff0000 ;
+font-size : 90%;
+font-weight: 600;
+padding: .02em .05em }
+.nava:hover {
+background-color: #ffd2d3;
+color: #cc3333; }
+.indent { margin-left: 6%;
+width: 80% ;
+text-indent: 0em; }
+.toc-multiple {
+font-style: normal ;
+font-variant: small-caps ;
+text-align: left;
+margin-left: 10% ;
+margin-right: 10% ;
+margin-bottom: 0em ;
+margin-top: 0em;
+font-size: 85% ; }
+.cite {
+margin-left: 8%;
+margin-right: 8%;
+text-indent: 1.3em ;
+line-height: 110% ;
+text-align: left;
+font-size: 90%;
+font-family: arial, "lucida console", sans-serif; }
+.right { text-align: right; }
+.center { text-align: center; }
+.left { text-align: left; }
+.cast p{
+text-align: left;
+text-indent: 0em ;
+margin-left: 0% ;
+margin-right: 10% ;
+margin-bottom: .5em ;
+margin-top: .5em;
+font-size: 90% ; }
+.write p {
+text-align: left;
+margin-left: 5% ;
+margin-right: 10% ;
+margin-bottom: 0em ;
+margin-top: 0em;
+font-size: 95% ; }
+.intro {
+text-align: justify;
+text-indent: 0em;
+margin-left: 15% ;
+margin-right: 15% ;
+margin-bottom: 0em ;
+margin-top: 0em;
+font-style: italic;
+font-size: 90% ; }
+.italic {
+font-style: italic;
+text-align: left;
+margin-left: 0em;
+margin-right: 10% ;
+margin-bottom: 0em ;
+margin-top: 0em;
+font-size: 100% ; }
+.letter {
+text-align: left;
+text-indent: 0em;
+margin-left: 9% ;
+margin-right: 9% ;
+margin-bottom: 0em ;
+margin-top: 0em;
+font-size: 95% ; }
+.letterend {
+text-indent: 1em;
+margin-left: 25% ;
+margin-bottom: 0em ;
+margin-top: 0em;
+font-size: 92% ; }
+.poetry {
+text-align: center;
+text-indent: 0em;
+margin-left: 10% ;
+margin-right: 0.5em ;
+margin-bottom: 0em ;
+margin-top: 0em;
+width: 80%;
+font-style: italic;
+font-size: 98% ; }
+.song {
+text-align: left;
+text-indent: 0em;
+margin-left: 8% ;
+margin-right: 0.5em ;
+margin-bottom: 0em ;
+margin-top: 0em;
+width: 80%;
+font-style: normal;
+font-size: 95% ; }
+.story {
+text-align: left;
+margin-left: 5% ;
+margin-right: 10% ;
+margin-bottom: 0em ;
+margin-top: 0em;
+font-style: italic;
+font-size: 98% ; }
+.credit { font-family: "arial narrow", sans-serif ;
+text-indent: 0em ;
+margin-left: 10% ;
+margin-bottom: 0em ;
+font-size: 85% ; }
+.footnote { font-size: 50%; vertical-align: super; line-height: 35%; }
+.sup { font-size: 50%; vertical-align: super; line-height: 35%; }
+.sub { font-size: 25%; vertical-align: sub; line-height: 5%; }
+.strong { font-weight: bold }
+.small-caps { font-variant: small-caps; }
+.flt {float: right; border-style: none; border-width: thin;
+border-color: black; padding: .5em 1em }
+.underline {text-decoration: underline; }
+.strike { text-decoration: line-through; }
+.memocenter { font-family: "arial narrow", sans-serif ;
+text-indent: 0em ;
+text-align: center ;
+margin-bottom: 0em ;
+font-size: 85% ; }
+.memo { font-family: "arial narrow", sans-serif ;
+text-indent: 0em ;
+margin-left: 10% ;
+margin-bottom: 0em ;
+font-size: 85% ; }
+.title { background: transparent; color: #cc3333; }
+hr { margin-top: 2em;
+page-break-before: always;
+width:50%; }
+ol
+{ margin-left:15%; margin-right:0px; }
+dl
+{ margin-left:15%; margin-right:0em;
+padding:0.4em; }
+.ind1 { text-indent: 0em ;
+margin-left: 6% ;
+margin-bottom: 0em ;
+font-style: italic;
+font-size: 95% ; }
+.ind2 { text-indent: 0em ;
+margin-left: 11% ;
+margin-bottom: 0em ;
+font-style: italic;
+font-size: 95% ; }
+.ind3 { text-indent: 0em ;
+margin-left: 36% ;
+margin-bottom: 0em ;
+font-size: 95% ; }
+.ind4 { text-indent: 0em ;
+margin-left: 41% ;
+margin-bottom: 0em ;
+font-size: 95% ; }
+/*]]>*/
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+  <title>Egan, Greg - Luminous</title>
+
+
+</head>
+
+
+
+<body>
+
+<h1>Luminous</h1>
+
+<h2>Greg Egan</h2>
+
+<p></p>
+
+<p>I woke disoriented, unsure why. I knew I was Iying on the
+narrow, lumpy single bed in Room 22 of the Hotel Fleapit; after almost
+a month in Shanghai, the topography of the mattress was depressingly
+familiar. But there was something wrong with the way I was Iying; every
+muscle in my neck and shoulders was protesting that nobody could end up
+in this position from natural causes, however badly they&rsquo;d
+slept.</p>
+
+<p>And I could smell blood.</p>
+
+<p>I opened my eyes. A woman I&rsquo;d never seen before was
+kneeling over me, slicing into my left tricep with a disposable
+scalpel. I was lying on my side, facing the wall, one hand and one
+ankle cuffed to the head and foot of the bed.</p>
+
+<p>Something cut short the surge of visceral panic before I could
+start stupidly thrashing about, instinctively trying to break free.
+Maybe an even more ancient response-catatonia in the face of
+danger-took on the adrenaline and won. Or maybe I just decided that I
+had no right to panic when I&rsquo;d been expecting something like
+this for weeks.</p>
+
+<p>I spoke softly, in English. &ldquo;What you&rsquo;re
+in the process of hacking out of me is a necrotrap. One heartbeat
+without oxygenated blood, and the cargo gets fried.&rdquo;</p>
+
+<p>My amateur surgeon was compact, muscular, with short black
+hair. Not Chinese: Indonesian, maybe. If she was surprised that
+I&rsquo;d woken prematurely, she didn&rsquo;t show it. The
+gene-tailored hepatocytes I&rsquo;d acquired in Hanoi could degrade
+almost anything from morphine to curare; it was a good thing the local
+anaesthetic was beyond their reach.</p>
+
+<p>Without taking her eyes off her work, she said,
+&ldquo;Look on the table next to the bed.&rdquo;</p>
+
+<p>I twisted my head around. She&rsquo;d set up a loop of
+plastic tubing full of blood-mine, presumably-circulated and aerated by
+a small pump. The stem of a large funnel fed into the loop, the
+intersection controlled by a valve of some kind. Wires trailed from the
+pump to a sensor taped to the inside of my elbow, synchronizing the
+artificial pulse with the real. I had no doubt that she could tear the
+trap from my vein and insert it into this substitute without missing a
+beat.</p>
+
+<p>I cleared my throat and swallowed. &ldquo;Not good enough.
+The trap knows my blood pressure profile exactly. A generic heartbeat
+won&rsquo;t fool it.&rdquo;</p>
+
+<p>&ldquo;You&rsquo;re bluffing .&rdquo; But she
+hesitated, scalpel raised. The hand-held MRI scanner she&rsquo;d
+used to find the trap would have revealed its basic configuration, but
+few fine details of the engineering-and nothing at all about the
+software.</p>
+
+<p>&ldquo;I&rsquo;m telling you the truth.&rdquo; I
+looked her squarely in the eye, which wasn&rsquo;t easy given our
+awkward geometry. &ldquo;It&rsquo;s new, it&rsquo;s
+Swedish. You anchor it in a vein forty-eight hours in advance, put
+yourself through a range of typical activities so it can memorize the
+rhythms&hellip; then you inject the cargo into the trap. Simple,
+foolproof, effective.&rdquo; Blood trickled down across my chest
+onto the sheet. I was suddenly very glad that I hadn&rsquo;t buried
+the thing deeper, after all.</p>
+
+<p>&ldquo;So how do you retrieve the cargo,
+yourself?&rdquo;</p>
+
+<p>&ldquo;That would be telling.&rdquo;</p>
+
+<p>&ldquo;Then tell me now, and save yourself some
+trouble.&rdquo; She rotated the scalpel between thumb and
+forefinger impatiently. My skin did a cold burn all over, nerve ends
+jangling, capillaries closing down as blood dived for cover.</p>
+
+<p>I said, &ldquo;Trouble gives me hypertension.&rdquo;</p>
+
+<p>She smiled down at me thinly, conceding the stalemate-then
+peeled off one stained surgical glove, took out her notepad, and made a
+call to a medical equipment supplier. She listed some devices which
+would get around the problem-a blood pressure probe, a more
+sophisticated pump, a suitable computerized interface-arguing heatedly
+in fluent Mandarin to extract a promise of a speedy delivery. Then she
+put down the notepad and placed her ungloved hand on my shoulder.</p>
+
+<p>&ldquo;You can relax now. We won&rsquo;t have long to
+wait.&rdquo;</p>
+
+<p>I squirmed, as if angrily shrugging off her hand-and succeeded
+in getting some blood on her skin. She didn&rsquo;t say a word, but
+she must have realized at once how careless she&rsquo;d been; she
+climbed off the bed and headed for the washbasin, and I heard the water
+running.</p>
+
+<p>Then she started retching.</p>
+
+<p>I called out cheerfulIy, &ldquo;Let me know when
+you&rsquo;re ready for the
+antidote.&rdquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l</p>
+
+<p>I heard her approach, and I turned to face her. She was ashen,
+her face contorted with nausea, eyes and nose streaming mucus and tears.</p>
+
+<p>&ldquo;Tell me where it is!&rdquo;</p>
+
+<p>&ldquo;Uncuff me, and I&rsquo;ll get it for
+you.&rdquo;</p>
+
+<p>&ldquo;No! No deals!&rdquo;</p>
+
+<p>&ldquo;Fine. Then you&rsquo;d better start looking,
+yourself.&rdquo;</p>
+
+<p>She picked up the scalpel and brandished it in my face.
+&ldquo;Screw the cargo. I&rsquo;ll do it!&rdquo; She was
+shivering like a feverish child, uselessly trying ~ to stem the flood
+from her nostrils with the back of her hand. ~ I</p>
+
+<p>I said coldly, &ldquo;If you cut me again,
+you&rsquo;ll lose more than the cargo.&rdquo;</p>
+
+<p>She turned away and vomited; it was thin and gray,
+blood-streaked. The toxin was persuading cells in her stomach lining to
+commit suicide en masse.</p>
+
+<p>&ldquo;Uncuff me. It&rsquo;ll kill you. It
+doesn&rsquo;t take long.&rdquo;</p>
+
+<p>She wiped her mouth, steeled herself, made as if to speak-then
+started puking again. I knew, first hand, exactly how bad she was
+feeling. Keeping it down was like trying to swallow a mixture of shit
+and sulphuric acid. Bringing it up was like evisceration.</p>
+
+<p>I said, &ldquo;In thirty seconds, you&rsquo;ll be too
+weak to help yourself-even if I told you where to look. So if
+I&rsquo;m not free&hellip;&rdquo;</p>
+
+<p>She produced a gun and a set of keys, uncuffed me, then stood
+by the foot of the bed, shaking badly but keeping me targeted. I
+dresses quickly, ignoring her threats, bandaging my arm with a
+miraculously clean spare sock before putting on a T-shirt and a jacket.
+She sagged to her knees, still aiming the gun more or less in my
+direction-but her eyes were swollen half-shut brimming with yellow
+fluid. I thought about trying to disarm her, but it didn&rsquo;t
+seem worth the risk.</p>
+
+<p>I packed my remaining clothes, then glanced around the room as
+if I might have left something behind. But everything that really
+mattered was in my veins; Alison had taught me that that was the only
+way to travel.</p>
+
+<p>I turned to the burglar. &ldquo;There is no antidote. But
+the toxin won&rsquo;t kill you. You&rsquo;ll just wish it
+would, for the next twelve hours. Goodbye.&rdquo;</p>
+
+<p>As I headed for the door, hairs rose suddenly on the back of
+my neck. It occurred to me that she might not take me at my word-and
+might fire a par ting shot, believing she had nothing to lose.</p>
+
+<p>Turning the handle, without looking back, I said,
+&ldquo;But if you come after me-next time, Ill kill you.&rdquo;</p>
+
+<p>That was a lie, but it seemed to do the trick. As I pulled the
+door shut behind me, I heard her drop the gun and start vomiting again.</p>
+
+<p>Halfway down the stairs, the euphoria of escape began to give
+way to a bleaker perspective. If one careless bounty hunter could find
+me, her more methodical colleagues couldn&rsquo;t be far behind.
+Industrial Algebra was closing in on us. If Alison didn&rsquo;t
+gain access to Luminous soon, we&rsquo;d have no choice but to
+destroy the map. And even that would only be buying time.</p>
+
+<p>I paid the desk clerk for the room until the next morning,
+stressing that my companion should not be disturbed, and added a
+suitable tip to compensate for the mess the cleaners would find. The
+toxin denatured in air; the bloodstains would be harmless in a matter
+of hours. The clerk eyed me suspiciously, but said nothing.</p>
+
+<p>Outside, it was a mild, cloudless summer morning. It was
+barely six o&rsquo;clock, but Kongjiang Lu was already crowded with
+pedestrians, cyclists buses-and a few ostentatious chauffeured
+limousines, ploughing through the traffic at about ten kph. It looked
+like the night shift had just emerged from the Intel factory down the
+road; most of the passing cyclists were wearing the orange,
+logo-emblazoned overalls.</p>
+
+<p>Two blocks from the hotel I stopped dead, my legs almost
+giving way beneath me. It wasn&rsquo;t just shock-a delayed
+reaction, a belated acceptance of how close I&rsquo;d come to being
+slaughtered; The burglar&rsquo;s clinical violence was chilling
+enough-but what it implied was infinitely more disturbing.</p>
+
+<p>Industrial Algebra was paying big money, violating
+international law, taking serious risks with their corporate and
+personal futures. The arcane abstraction of the defect was being
+dragged into the world of blood and dust, boardrooms and assassins,
+power and pragmatism.</p>
+
+<p>And the closest thing to certainty humanity had ever known was
+in danger of dissolving into quicksand.</p>
+
+<p>It had all started out as a joke. Argument for
+argument&rsquo;s sake. Alison and her infuriating heresies.</p>
+
+<p>&ldquo;A mathematical theorem,&rdquo; she&rsquo;d
+proclaimed, &ldquo;only becomes true when a physical system tests
+it out: when the system&rsquo;s behavior depends in some way on the
+theorem being true or false.&rdquo;</p>
+
+<p>It was June 1994. We were sitting in a small paved courtyard,
+having just emerged yawning and blinking into the winter sunlight from
+the final lecture in a one-semester course on the philosophy of
+mathematics-a bit of-light relief from the hard grind of the real
+stuff. We had fifteen minutes to kill before meeting some friends for
+lunch. It was a social conversation-verging on mild flirtation-nothing
+more. Maybe there were demented academics lurking in dark crypts
+somewhere, who held views on the nature of mathematical that they were
+willing to die for. But we were twenty years old, and we knew it was
+all angels on the head of a pin.</p>
+
+<p>I said, &ldquo;Physical systems don&rsquo;t create
+mathematics. Nothing creates mathematics-it&rsquo;s timeless. All
+of number theory would still be exactly the same, even if the universe
+contained nothing but a single electron.&rdquo;</p>
+
+<p>Alison snorted. &ldquo;Yes, because even one electron,
+plus a space-time to put it in, needs all of quantum mechanics and all
+of general relativity-and all the mathematical infrastructure they
+entail. One particle floating in a quantum vacuum needs half the major
+results of group theory, functional analysis, differential
+geometry-&rdquo;</p>
+
+<p>&ldquo;Okay, okay! I get the point. But if
+that&rsquo;s the case&hellip; the events in the first
+picosecond after the Big Bang would have
+&lsquo;constructed&rsquo; every last mathematical truth
+required by any physical system, all the way to the Big Crunch. Once
+you&rsquo;ve got the mathematics that underpins the Theory of
+Everything&hellip; that&rsquo;s it, that&rsquo;s all you
+ever need. End of story.&rdquo;</p>
+
+<p>&ldquo;But it&rsquo;s not. To apply the Theory of
+Everything to a particular system, you still need all the mathematics
+for dealing with that system-which could include results far beyond the
+mathematics that the TOE itself requires. I mean, fifteen billion years
+after the Big Bang, someone can still come along and prove,
+say&hellip; Fermat&rsquo;s Last Theorem.&rdquo; Andrew
+Wiles at Princeton had recently announced a proof of the famous
+conjecture, although his work was still being scrutinized by his
+colleagues, and the final verdict wasn&rsquo;t yet in.
+&ldquo;Physics never needed that before.&rdquo;</p>
+
+<p>I protested, &ldquo;What do you mean,
+&lsquo;before&rsquo;? Fermat&rsquo;s Last Theorem never
+has-and never will-have anything to do with any branch of
+physics.&rdquo;</p>
+
+<p>Alison smiled sneakily. &ldquo;No branch-no. But only
+because the class of physical systems whose behavior depends on it is
+so ludicrously specific: the brains of mathematicians who are trying to
+validate the Wiles proof.</p>
+
+<p>&ldquo;Think about it. Once you start trying to prove a
+theorem, then even if the mathematics is so &lsquo;pure&rsquo;
+that it has no relevance to any other object in the
+universe&hellip; you&rsquo;ve just made it relevant to
+yourself. You have to choose some physical process to test the
+theorem-whether you use a computer, or a pen and paper&hellip; or
+just close your eyes and shuffle neurotransmitters. There&rsquo;s
+no such thing as a proof that doesn&rsquo;t rely on physical
+events-and whether they&rsquo;re inside or outside your skull
+doesn&rsquo;t make them any less real.&rdquo;</p>
+
+<p>&ldquo;Fair enough,&rdquo; I conceded warily.
+&ldquo;But that doesn&rsquo;t mean-&rdquo;</p>
+
+<p>&ldquo;And maybe Andrew Wiles&rsquo;s brain-and body,
+and notepaper-comprised the first physical system whose behavior
+depended on the theorem being true or false. But I don&rsquo;t
+think human actions have any special role&hellip; and if some swarm
+of quarks had done the same thing blindly, fifteen billion years
+before-executed some purely random interaction that just happened to
+test the conjecture in some way-then those quarks would have
+constructed FLT long before Wiles. We&rsquo;ll never
+know.&rdquo;</p>
+
+<p>I opened my mouth to complain that no swarm of quarks could
+have tested the infinite number of cases encompassed by the theorem-but
+I caught myself just in time. That was true-but it hadn&rsquo;t
+stopped Wiles. A finite sequence of logical steps linked the axioms of
+number theory-which included some simple generalities about all
+numbers-to Fermat&rsquo;s own sweeping assertion. And if a
+mathematician could test those logical steps by manipulating a finite
+number of physical objects for a finite amount of time-whether they
+were pencil marks on paper, or neurotransmitters in his or her
+brain-then all kinds of physical systems could, in theory, mimic the
+structure of the proof&hellip; with or without any awareness of
+what it was they were &ldquo;proving.&rdquo;</p>
+
+<p>I leant back on the bench and mimed tearing out hair.
+&ldquo;If I wasn&rsquo;t a die-hard Platonist before,
+you&rsquo;re forcing me into it! Fermat&rsquo;s Last Theorem
+didn&rsquo;t need to be proved by anyone-or stumbled on by any
+random swarm of quarks. If it&rsquo;s true, it was always true.
+Everything implied by a given set of axioms is logically connected to
+them, timelessly, eternally&hellip; even if the links
+couldn&rsquo;t be traced by people-or quarks-in the lifetime of the
+universe.&rdquo;</p>
+
+<p>Alison was having none of this; every mention of timeless and
+eternal truths brought a faint smile to the corner of her mouth, as if
+I was affirming my belief in Santa Claus. She said, &ldquo;So who,
+or what, pushed the consequences of &lsquo;There exists an entity
+zero&rsquo; and &lsquo;Every X has a successor et cetera, all
+the way to Fermat&rsquo;s Last Theorem and beyond, before the
+universe had a chance to test out any of it?&rdquo;</p>
+
+<p>I stood my ground. &ldquo;What&rsquo;s joined by logic
+is just&hellip; joined. Nothing has to happen-consequences
+don&rsquo;t have to be pushed&lsquo; into existence by anyone,
+or anything. Or do you imagine that the first events after the Big
+Bang, the first wild jitters of the quark-gluon-plasma, stopped to fill
+in all the logical gaps? You think the quarks reasoned: well, so far
+we&rsquo;ve done A and B and C-but now we must do D, because D
+would be logically inconsistent with the other mathematics
+we&rsquo;ve &rsquo;invented&lsquo; so far&hellip; even
+if it would take a five-hundred-thousand-page proof to spell out the
+inconsistency?&rdquo;</p>
+
+<p>Alison thought it over. &lsquo;&rsquo;No. But what if
+event D took place, regardless? What if the mathematics it implied was
+logically inconsistent with the rest-but it went ahead and happened
+anyway&hellip; because the universe was too young to have computed
+the fact that there was any discrepancy?&ldquo;</p>
+
+<p>I must have sat and stared at her, open-mouthed, for about ten
+seconds. Given the orthodoxies we&rsquo;d spent the last
+two-and-a-half years absorbing, this was a seriously outrageous
+statement.</p>
+
+<p>&ldquo;You&rsquo;re claiming that&hellip;
+mathematics might be strewn with primordial defects in consistency?
+Like space might be strewn with cosmic strings?&rdquo;</p>
+
+<p>&ldquo;Exactly.&rdquo; She stared back at me, feigning
+nonchalance. &ldquo;If space-time doesn&rsquo;t join up with
+itself smoothly, everywhere&hellip; why should mathematical
+logic?&rdquo;</p>
+
+<p>I almost choked. &ldquo;Where do I begin? What
+happens-now-when some physical system tries to link theorems across the
+defect? If theorem D has been rendered &lsquo;true&rsquo; by
+some over-eager quarks, what happens when we program a computer to
+disprove it? When the software goes through all the logical steps that
+link A, B, and C-which the quarks have also made true-the dreaded
+not-D&hellip; does it succeed, or doesn&rsquo;t it?&rdquo;</p>
+
+<p>Alison sidestepped the question. &ldquo;Suppose
+they&rsquo;re both true: D and not-D. Sounds like the end of
+mathematics, doesn&rsquo;t it? The whole system falls apart,
+instantly. From D and not-D together you can prove anything you like:
+one equals zero, day equals night. But that&rsquo;s just the boring
+old-fart Platonist view-where logic travels faster than light, and
+computation takes no time at all. People live with omega-inconsistent
+theories, don&rsquo;t they?&rdquo;</p>
+
+<p>Omega-inconsistent number theories were non-standard versions
+of arithmetic, based on axioms that &ldquo;almost&rdquo;
+contradicted each other-their saving grace being that the
+contradictions could only show up in &ldquo;infinitely long
+proofs&rdquo; (which were formally disallowed, quite apart from
+being physically impossible). That was perfectly respectable modern
+mathematics-but Alison seemed prepared to replace &ldquo;infinitely
+long&rdquo; with just plain &ldquo;long&rdquo;-as if the
+difference hardly mattered, in practice.</p>
+
+<p>I said, &ldquo;Let me get this straight. What
+you&rsquo;re talking about is taking ordinary arithmetic-no weird
+counter-intuitive axioms, just the stuff every ten-year-old knows is
+true-and proving that it&rsquo;s inconsistent, in a finite number
+of steps?&rdquo;</p>
+
+<p>She nodded blithely. &ldquo;Finite, but large. So the
+contradiction would rarely have any physical manifestation-it would be
+&lsquo;computationally distant&rsquo; from everyday
+calculations, and everyday physical events. I mean&hellip; one
+cosmic string, somewhere out there, doesn&rsquo;t destroy the
+universe, does it? It does no harm to anyone.&rdquo;</p>
+
+<p>I laughed drily. &ldquo;So long as you don&rsquo;t get
+too close. So long as you don&rsquo;t tow it back to the solar
+system and let it twitch around slicing up planets.&rdquo;</p>
+
+<p>&ldquo;Exactly.&rdquo;</p>
+
+<p>I glanced at my watch. &ldquo;Time to come down to Earth,
+I think. You know we&rsquo;re meeting Ju1Ia and Ramesh-?&rdquo;</p>
+
+<p>Alison sighed theatrically. &ldquo;I know, I know. And
+this would bore them witless, poor things-so the subject&rsquo;s
+closed, I promise.&rdquo; She added wickedly, &ldquo;Humanities
+students are so myopic.&rdquo;</p>
+
+<p>We set off across the tranquil leafy campus. Alison kept her
+word, and we walked in silence; carrying on the argument up to the last
+minute would have made it even harder to avoid the topic once we were
+in polite company.</p>
+
+<p>Half-way to the cafeteria, though, I couldn&rsquo;t help
+myself.</p>
+
+<p>&ldquo;If someone ever did program a computer to follow a
+chain of inferences across the defect&hellip; what do you claim
+would actually happen? When the end result of all those simple,
+trustworthy logical steps finally popped up on the screen-which group
+of primordial quarks would win the battle? And please don&rsquo;t
+tell me that the whole computer just conveniently vanishes.&rdquo;</p>
+
+<p>Alison smiled, tongue-in-cheek at last. &ldquo;Get real,
+Bruno. How can you expect me to answer that, when the mathematics
+needed to predict the result doesn&rsquo;t even exist yet? Nothing
+I could say would be true or false-until someone&rsquo;s gone ahead
+and done the experiment.&rdquo;</p>
+
+<p>I spent most of the day trying to convince myself that I
+wasn&rsquo;t being followed by some accomplice (or rival) of the
+surgeon, who might have been lurking outside the hotel. There was
+something disturbingly Kafka-esque about trying to lose a tail who
+might or might not have been real: no particular face I could search
+for in the crowd, just the abstract idea of a pursuer. It was too late
+to think about plastic surgery to make me look Han Chinese-Alison had
+raised this as a serious suggestion, back in Vietnam-but Shanghai had
+over a million foreign residents, so with -care even an Anglophone of
+Italian descent should have been able to vanish.</p>
+
+<p>Whether or not I was up to the task was another matter.</p>
+
+<p>I tried joining the ant-trails of the tourists, following the
+path of least resistance from the insane crush of the Yuyuan Bazaar
+(where racks bursting with ten-cent watch-PC&rsquo;s,
+mood-sensitive contact lenses, and the latest karaoke vocal implants,
+sat beside bamboo cages of live ducks and pigeons) to the one-time
+residence of Sun Yatsen (whose personality cult was currently
+undergoing a mini-series-led revival on Star TV, advertised on ten
+thousand buses and ten times as many T-shirts). From the tomb of the
+writer Lu Xun (&ldquo;Always think and study&hellip; visit the
+general then visit the victims, see the realities of your time with
+open eyes&rdquo;-no prime time for him) to the Hongkou
+McDonald&rsquo;s (where they were giving away small plastic Andy
+Warhol figurines, for reasons I couldn&rsquo;t fathom). I mimed
+leisurely window-shopping between the shrines, but kept my body
+language sufficiently unfriendly to deter even the loneliest Westerner
+from attempting to strike up a conversation. If foreigners were
+unremarkable in most of the city, they were positively eye-glazing
+here-even to each other-and I did my best to offer no one the slightest
+reason to remember me.</p>
+
+<p>Along the way I checked for messages from Alison, but there
+were none. I left five of my own, tiny abstract chalk marks on bus
+shelters and park benches-all slightly different, but all saying the
+same thing: CLOSE BRUSH, BUT SAFE NOW. MOVING ON.</p>
+
+<p>By early evening, I&rsquo;d done all I could to throw off
+my hypothetical shadow, so I headed for the next hotel on our agreed
+but unwritten list. The last time we&rsquo;d met face-to-face, in
+Hanoi, I mocked all of Alison&rsquo;s elaborate preparations. Now I
+was beginning to wish that I&rsquo;d begged her to extend our
+secret language to cover extreme contingencies. . FATALLY WOUNDED.
+BETRAYED YOU UNDER TORTURE. REALITY DECAYING. OTHERWISE FINE.</p>
+
+<p>&nbsp;</p>
+
+<p>The hotel on Huaihai Zhonglu was a step up from the last one,
+but not quite classy enough to refuse payment in cash. The desk clerk
+made polite small-talk, and I lied as smoothly as I could about my
+plans to spend a week sight seeing before heading for Beijing. The
+bellperson smirked when I tipped him too much-and I sat on my bed for
+five minutes afterward, wondering what significance to read into that.</p>
+
+<p>I struggled to regain a sense of proportion. Industrial
+Algebra could have bribed every single hotel employee in Shanghai to be
+on the lookout for us-but that was a bit like saying that, in theory,
+they could have duplicated our entire twelve-year search for defects,
+and not bothered to pursue us at all. There was no question that they
+wanted what we had, badly-but what could they actually do about it? Go
+to a merchant bank (or the Mafia, or a Triad) for finance? That might
+have worked if the cargo had been a stray kilogram of plutonium, or a
+valuable gene sequence-but only a few hundred thousand people on the
+planet would be capable of understanding what the defect was, even in
+theory. Only a fraction of that number would believe that such a thing
+could really exist&hellip; and even fewer would be both wealthy and
+immoral enough to invest in the business of exploiting it.</p>
+
+<p>The stakes appeared to be infinitely high-but that
+didn&rsquo;t make the players omnipotent.</p>
+
+<p>Not yet.</p>
+
+<p>I changed the dressing on my arm, from sock to handkerchief,
+but the incision was deeper than I&rsquo;d realized, and it was
+still bleeding thinly. I left the hotel-and found exactly what I needed
+in a twenty-four-hour emporium just ten minutes away. Surgical grade
+tissue repair cream: a mixture of collagen-based adhesive, antiseptic,
+and growth factors. The emporium wasn&rsquo;t even a
+pharmaceuticals outlet-it just had aisle after aisle packed with all
+kinds of unrelated odds and ends, laid out beneath the unblinking
+blue-white ceiling panels. Canned food, PVC plumbing fixtures,
+traditional medicines, rat contraceptives, video ROMS. It was a random
+cornucopia, an almost organic diversity-as if the products had all just
+grown on the shelves from whatever spores the wind had happened to blow
+in.</p>
+
+<p>I headed back to the hotel, pushing my way through the
+relentless crowds, half seduced and half sickened by the odors of
+cooking, dazed by the endless vista of holograms and neon in a language
+I barely understood. Fifteen minutes later, reeling from the noise and
+humidity, I realized that I was lost.</p>
+
+<p>I stopped on a street corner and tried to get my bearings.
+Shanghai stretched out around me, dense and lavish, sensual and
+ruthless-a Darwinian economic simulation self-organized to the brink of
+catastrophe. The Amazon of commerce: this city of sixteen million had
+more industry of every kind, more exporters and importers, more
+wholesalers and retailers, traders and re-sellers and re-cyclers and
+scavengers, more billionaires and more beggars, than most nations on
+the planet.</p>
+
+<p>Not to mention more computing power.</p>
+
+<p>China itself was reaching the cusp of its decades-long
+transition from brutal totalitarian communism to brutal totalitarian
+capitalism: a slow seamless morph from Mao to Pinochet set to the
+enthusiastic applause of its trading partners and the international
+financial agencies. There&rsquo;d been no need for a
+counter-revolution just layer after layer of carefully reasoned
+Newspeak to pave the way from previous doctrine to the stunningly
+obvious conclusion that private property, a thriving middle class, and
+a few trillion dollars worth of foreign investment were exactly what
+the Party had been aiming for all along.</p>
+
+<p>The apparatus of the police state remained as essential as
+ever. Trade unionists with decadent bourgeois ideas about uncompetitive
+wages, journalists With counter-revolutionary notions of exposing
+corruption and nepotism, and any number of subversive political
+activists spreading destabilizing propaganda about the fantasy of free
+elections, all needed to be kept in check.</p>
+
+<p>In a way, Luminous was a product of this strange transition
+from communism to not-communism in a thousand tiny steps. No one else,
+not even the U.S. defense research establishment, possessed a single
+machine with so much power. The rest of the world had succumbed long
+ago to networking, giving up their imposing supercomputers with their
+difficult architecture and customized chips for a few hundred of the
+latest mass-produced work stations. In fact, the biggest computing
+feats of the twenty-first century had all been farmed out over the
+Internet to thousands of volunteers, to run on their machines whenever
+the processors would otherwise be idle. That was how Alison and I had
+mapped the defect in the first place: seven thousand amateur
+mathematicians had shared the joke, for twelve years.</p>
+
+<p>But now the net was the very opposite of what we needed-and
+only Luminous could take its place. And though only the
+People&rsquo;s Republic could have paid for it, and only the
+People&rsquo;s Institute for Advanced Optical Engineering could
+have built it&hellip; only Shanghai&rsquo;s QIPS Corporation
+could have sold time on it to the world-while it was still being used
+to model hydrogen bomb shock waves, pilotless fighter jets, and exotic
+antisatellite weapons.</p>
+
+<p>I finally decoded the street signs, and realized what
+I&rsquo;d done: I&rsquo;d turned the wrong way coming out of
+the emporium, it was as simple as that.</p>
+
+<p>I retraced my steps, and I was soon back on familiar territory.</p>
+
+<p>When I opened the door of my room, Alison was sitting on the
+bed.</p>
+
+<p>I said, &ldquo;What is it with locks in this
+city?&rdquo;</p>
+
+<p>We embraced, briefly. We&rsquo;d been lovers, once-but
+that was long over. And we&rsquo;d been friends for years
+afterward-but I wasn&rsquo;t sure if that was still the right word.
+Our whole relationship now was too functional, too spartan. Everything
+revolved around the defect, now.</p>
+
+<p>She said, &ldquo;I got your message. What
+happened?&rdquo;</p>
+
+<p>I described the morning&rsquo;s events.</p>
+
+<p>&ldquo;You know what you should have done?&rdquo;</p>
+
+<p>That stung. &ldquo;I&rsquo;m still here,
+aren&rsquo;t I? The cargo&rsquo;s still safe.&rdquo;</p>
+
+<p>&ldquo;You should have killed her, Bruno.&rdquo;</p>
+
+<p>I laughed. Alison gazed back at me placidly, and I looked
+away. I didn&rsquo;t know if she was serious-and I didn&rsquo;t
+much want to find out.</p>
+
+<p>She helped me apply the repair cream. My toxin was no threat
+to her-we&rsquo;d both installed exactly the same symbionts, the
+same genotype from the same unique batch in Hanoi. But it was strange
+to feel her bare fingers on my broken skin, knowing that no one else on
+the planet could touch me like this, with impunity.</p>
+
+<p>Ditto for sex, but I didn&rsquo;t want to dwell on that.</p>
+
+<p>As I slipped on my jacket, she said, &ldquo;So guess what
+we&rsquo;re doing at five A.M. tomorrow?&rdquo;</p>
+
+<p>&ldquo;Don&rsquo;t tell me: I fly to Helsinki, and you
+fly to Cape Town. Just to throw them off the scent.&rdquo;</p>
+
+<p>That got a faint smile. &ldquo;Wrong. We&rsquo;re
+meeting Yuen at the Institute-and spending half an hour on
+Luminous.&rdquo;</p>
+
+<p>&ldquo;You are brilliant.&rdquo; I bent over and
+kissed her on the forehead. &ldquo;But I always knew
+you&rsquo;d pull it off.&rdquo;</p>
+
+<p>And I should have been delirious-but the truth was, my guts
+were churning. I felt almost as trapped as I had upon waking cuffed to
+the bed. If Luminous had remained beyond our reach (as it should have,
+since we couldn&rsquo;t afford to hire it for a microsecond at the
+going rate) we would have had no choice but to destroy all the data,
+and hope for the best. Industrial Algebra had no doubt dredged up a few
+thousand fragments of the original Internet calculations-but it was
+clear that, although they knew exactly what we&rsquo;d found, they
+still had no idea where we&rsquo;d found it. If they&rsquo;d
+been forced to start their own random search-constrained by the need
+for secrecy to their own private hardware-it might have taken them
+centuries.</p>
+
+<p>There was no question now, though, of backing away and leaving
+everything to chance. We were going to have to confront the defect in
+person.</p>
+
+<p>&ldquo;How much did you have to tell him?&rdquo;</p>
+
+<p>&ldquo;Everything.&rdquo; She walked over to the
+washbasin, removed her shirt, and began wiping the sweat from her neck
+and torso with a washcloth. &ldquo;Short of handing over the map. I
+showed him the search algorithms and their results, and all the
+programs wall need to run on Luminous-all stripped of specific
+parameter values, but enough for him to validate the techniques. He
+wanted to see direct evidence of the defect, of course, but I held out
+on that.&rdquo;</p>
+
+<p>&ldquo;And how much did he believe?&rdquo;</p>
+
+<p>&ldquo;He&rsquo;s reserved judgment. The deal is, we
+get half an hour&rsquo;s unimpeded access-but he gets to observe
+everything we do.&rdquo;</p>
+
+<p>I nodded, as if my opinion made any difference, as if we had
+any choice. Yuen Ting-fu had been Alison&rsquo;s supervisor for her
+Ph.D. on advanced applications of ring theory, when she&rsquo;d
+studied at Fu-tan University in the late nineties. Now he was one of
+the world&rsquo;s leading cryptographers, working as a consultant
+to the military, the security services, and a dozen international
+corporations. Alison had once told me that she&rsquo;d heard
+he&rsquo;d found a polynomial-time algorithm for factoring the
+product of two primes; that had never been officially
+confirmed&hellip; but such was the power of his reputation that
+almost everyone on the planet had stopped using the old RSA encryption
+method as the rumor had spread. No doubt time on Luminous was his for
+the asking-but that didn&rsquo;t mean he couldn&rsquo;t still
+be imprisoned for twenty years for giving it away to the wrong people,
+for the wrong reasons.</p>
+
+<p>I said, &ldquo;And you trust him? He may not believe in
+the defect now, but once he&rsquo;s convinced-&rdquo;</p>
+
+<p>&ldquo;Hell want exactly what we want. I&rsquo;m sure
+of that.&rdquo;</p>
+
+<p>&ldquo;Okay. But are you sure IA won&rsquo;t be
+watching, too? If they&rsquo;ve worked out why we&rsquo;re
+here, and they&rsquo;ve bribed someone-&rdquo;</p>
+
+<p>Alison cut me off impatiently. &ldquo;There are still a
+few things you can&rsquo;t buy in this city. Spying on a military
+machine like Luminous would be suicidal. No one would risk
+it.&rdquo;</p>
+
+<p>&ldquo;What about spying on unauthorized projects being
+run on a military machine? Maybe the crimes cancel out, and you end up
+a hero.&rdquo;</p>
+
+<p>She approached me, half naked, drying her face on my towel.
+&ldquo;We&rsquo;d better hope not.&rdquo;</p>
+
+<p>I laughed suddenly. &ldquo;You know what I like most about
+Luminous? They&rsquo;re not really letting Exxon and
+McDonnell-Douglas use the same machine as the People&rsquo;s
+Liberation Army. Because the whole computer vanishes every time they
+pull the plug. There&rsquo;s no paradox at all, if you look at it
+that way.&rdquo;</p>
+
+<p>Alison insisted that we stand guard in shifts. Twenty-four
+hours earlier, I might have made a joke of it; now I reluctantly
+accepted the revolver she offered me, and sat watching the door in the
+neon-tinged darkness while she went out like a light.</p>
+
+<p>The hotel had been quiet for most of the evening-but now it
+came to life. There were footsteps in the corridor every five
+minutes-and rats in the walls, foraging and screwing and probably
+giving birth. Police sirens wailed in the distance; a couple screamed
+at each other in the street below. I&rsquo;d read somewhere that
+Shanghai was now the murder capital of the world-but was that per
+capita, or in absolute numbers?</p>
+
+<p>After an hour, I was so jumpy that it was a miracle I
+hadn&rsquo;t blown my foot off. I unloaded the gun, then sat
+playing Russian roulette with the empty barrel. In spite of everything,
+I still wasn&rsquo;t ready to put a bullet in anyone&rsquo;s
+brain for the sake of defending the axioms of number theory.</p>
+
+<p>Industrial Algebra had approached us in a perfectly civilized
+fashion, at first. They were a small but aggressive UK-based company,
+designing specialized high-performance computing hardware for
+industrial and military applications. That they&rsquo;d heard about
+the search was no great surprise-it had been openly discussed on the
+Internet for years, and even joked about in serious mathematical
+journals-but it seemed an odd coincidence when they made contact with
+us just days after Alison had sent me a private message from
+Z&Yuml;rich mentioning the latest &ldquo;promising&rdquo;
+result. After half a dozen false alarms-all due to bugs and
+glitches-we&rsquo;d stopped broadcasting the news of every
+unconfirmed find to the people who were donating runtime to the
+project, let alone any wider circle. We were afraid that if we cried
+wolf one more time, half our collaborators would get so annoyed that
+they&rsquo;d withdraw their support.</p>
+
+<p>IA had offered us a generous slab of computing power on the
+company&rsquo;s private network several orders of magnitude more
+than we received from any other donor Why? The answer kept changing.
+Their deep respect for pure mathematics&hellip; their wide-eyed
+fun-loving attitude to life&hellip; their desire to be seen to be
+sponsoring a project s0 wild and hip and unlikely to succeed that it
+made SETI look like a staid blue-chip investment. It
+was-they&rsquo;d finally &ldquo;conceded&rdquo;-a desperate
+bid to soften their corporate image, after years of bad press for what
+certain unsavory governments did with their really rather nice smart
+bombs.</p>
+
+<p>We&rsquo;d politely declined. They&rsquo;d offered us
+highly paid consulting jobs. Bemused, we&rsquo;d suspended all
+net-based calculations-and started encrypting our mail with a simple
+but highly effective algorithm Alison had picked up from Yuen.</p>
+
+<p>Alison had been collating the results of the search on her own
+work station at her current home in Z&Yuml;rich, while
+I&rsquo;d helped coordinate things from Sydney. No doubt IA had
+been eavesdropping on the incoming data, but they&rsquo;d clearly
+started too late to gather the information needed to create their own
+map; each fragment of the calculations meant little in isolation. But
+when the work station was stolen (all the files were encrypted, it
+would have told them nothing) we&rsquo;d finally been forced to ask
+ourselves: If the defect turns out to be genuine, if the joke is no
+joke&hellip; then exactly what&rsquo;s at stake? How much
+money? How much power?</p>
+
+<p>On June 7, 2006, we met in a sweltering, crowded square in
+Hanoi. Alison wasted no time. She was carrying a backup of the data
+from the stolen work station in her notepad-and she solemnly proclaimed
+that, this time, the defect was real.</p>
+
+<p>The notepad&rsquo;s tiny processor would have taken
+centuries to repeat the long random trawling of the space of arithmetic
+statements that had been carried out on the net-but, led straight to
+the relevant computations, it could confirm the existence of the defect
+in a matter of minutes.</p>
+
+<p>The process began with Statement S. Statement S was an
+assertion about some ludicrously huge numbers-but it wasn&rsquo;t
+mathematically sophisticated or contentious in any way. There were no
+claims here about infinite sets, no propositions concerning
+&ldquo;every integer.&rdquo; It merely stated that a certain
+(elaborate) calculation performed on certain (very large) whole numbers
+led to a certain result-in essence, it was no different from something
+like &ldquo;5+3 = 4x2&rdquo;. It might have taken me ten years
+to check it with a pen and paper-but I could have carried out the task
+with nothing but elementary school mathematics and a great deal of
+patience. A statement like this could not be undecidable; it had to be
+either true or false.</p>
+
+<p>The notepad decided it was true.</p>
+
+<p>Then the notepad took Statement S&hellip; and in four
+hundred and twenty-three simple, impeccably logical steps, used it to
+prove not-S.</p>
+
+<p>I repeated the calculations on my own notepad-using a
+different software package. The result was exactly the same. I gazed at
+the screen, trying to concoct a plausible reason why two different
+machines running two different programs could have failed in identical
+ways. There&rsquo;d certainly been cases in the past of a single
+misprinted algorithm in a computing textbook spawning a thousand dud
+programs. But the operations here were too simple, too basic.</p>
+
+<p>Which left only two possibilities. Either conventional
+arithmetic was intrinsically flawed, and the whole Platonic ideal of
+the natural numbers was ultimately self-contradictory&hellip; or
+Alison was right, and an alternative arithmetic had come to hold sway
+in a &ldquo;computationally remote&rdquo; region, billions of
+years ago.</p>
+
+<p>I was badly shaken-but my first reaction was to try to play
+down the significance of the result. &ldquo;The numbers being
+manipulated here are greater than the volume of the observable
+universe, measured in cubic Planck lengths. If IA were hoping to use
+this on their foreign exchange transactions, I think they&rsquo;ve
+made a slight error of scale.&rdquo; Even as I spoke, though, I
+knew it wasn&rsquo;t that simple. The raw numbers might have been
+trans-astronomical-but it was the mere 1024 bits of the
+notepad&rsquo;s binary representations that had actually,
+physically misbehaved. Every truth in mathematics was encoded,
+reflected, in countless other forms. If a paradox like this-which at
+first glance sounded like a dispute about numbers too large to apply
+even to the most grandiose cosmological discussions-could affect the
+behavior of a five-gram silicon chip, then there could easily be a
+billion other systems on the planet at risk of being touched by the
+very same flaw.</p>
+
+<p>But there was worse to come.</p>
+
+<p>The theory was, we&rsquo;d located part of the boundary
+between two incompatible systems of mathematics-both of which were
+physically true, in their respective domains. Any sequence of
+deductions that stayed entirely on one side of the defect-whether it
+was the &ldquo;near side,&rdquo; where conventional arithmetic
+applied, or the &ldquo;far side,&rdquo; where the alternative
+took over-would be free from contradictions. But any sequence that
+crossed the border would give rise to absurdities-hence S could lead to
+not-S.</p>
+
+<p>So, by examining a large number of chains of inference, some
+of which turned out to be self-contradictory and some not, it should
+have been possible to map the area around the defect precisely-to
+assign every statement to one system or the other.</p>
+
+<p>Alison displayed the first map she&rsquo;d made. It
+portrayed an elaborate crenulated fractal border, rather like the
+boundary between two microscopic ice crystals-as if the two systems had
+been diffusing out at random from different starting points, and then
+collided, blocking each other&rsquo;s way. By now, I was almost
+prepared to believe that I really was staring at a snapshot of the
+creation of mathematics-a fossil of primordial attempts to define the
+difference between truth and falsehood.</p>
+
+<p>Then she produced a second map of the same set of statements,
+and overlaid the two. The defect, the border, had shifted-advancing in
+some places, retreating in others</p>
+
+<p>My blood went cold. &ldquo;That has got to be a bug in the
+software.&rdquo;</p>
+
+<p>&ldquo;It&rsquo;s not.&rdquo;</p>
+
+<p>I inhaled deeply, looking around the square as if the heedless
+crow. of tourists and hawkers, shoppers and executives, might offer
+some simple &ldquo;human&rdquo; truth more resilient than mere
+arithmetic. But all I could think of was 1984: Winston Smith, finally
+beaten into submission, abandoning every touchstone of reason by
+conceding that two and two make five.</p>
+
+<p>I said, &ldquo;Okay. Go on.&rdquo;</p>
+
+<p>&ldquo;In the early universe, some physical system must
+have tested out mathematics that was isolated, cut off from all the
+established results-leaving it free to decide the outcome at random.
+That&rsquo;s how the defect arose. But by now, all the mathematics
+in this region has been tested, all the gaps have been filled in. When
+a physical system tests theorem on the near side, not only has it been
+tested a billion time before-but all the logically adjacent statements
+around it have been decided, and they imply the correct result in a
+single step.&rdquo;</p>
+
+<p>&ldquo;You mean&hellip; peer pressure from the
+neighbors? No inconsistencies allowed, you have to conform? If x-1 =
+y-1, and x+1 = y+1, then x is left with no choice but to equal
+y&hellip; because there&rsquo;s nothing
+&lsquo;nearby&rsquo; to support the alternative?&rdquo;</p>
+
+<p>&ldquo;Exactly. Truth is determined locally. And
+it&rsquo;s the same, deep into the far side. The alternative
+mathematics has dominated there, and every test takes place surrounded
+by established theorems that reinforce each other, and the
+&lsquo;correct&rsquo;-non-standard-result.&rdquo;</p>
+
+<p>&ldquo;At the border, though-&rdquo;</p>
+
+<p>&ldquo;At the border, every theorem you test is getting
+contradictory advice. From one neighbor, x-1 = y-1&hellip; but from
+another, x+1 = y+2. And the topology of the border is so complex that a
+near-side theorem can have more far-side neighbors than near-side
+ones-and vice versa.</p>
+
+<p>&ldquo;So the truth at the border isn&rsquo;t fixed,
+even now. Both regions can still advance or retreat-it all depends on
+the order in which the theorems are tested. If a solidly near-side
+theorem is tested first, and it lend support to a more vulnerable
+neighbor, that can guarantee that they both stay near-side.&rdquo;
+She ran a brief animation that demonstrated the effect. &ldquo;But
+if the order is reversed, the weaker one will fail.&rdquo;</p>
+
+<p>I watched, light-headed. Obscure-but supposedly eternal-truth
+were tumbling like chess pieces. &ldquo;And&hellip; you think
+that physical processes going on right now-chance molecular events that
+keep inadvertently testing and re-testing different theories along the
+border-cause each side to gain and lose territory?&rdquo;</p>
+
+<p>&ldquo;Yes.&rdquo;</p>
+
+<p>&ldquo;So there&rsquo;s been a kind of&hellip;
+random tide washing back and forth between the two kinds of
+mathematics, for the past few billion years?&rdquo; I laughed
+uneasily, and did some rough calculations in my head. &ldquo;The
+expectation value for a random walk is the square root of N. I
+don&rsquo;t think we have anything to worry about. The tide
+isn&rsquo;t going to wash over an, useful arithmetic in the
+lifetime of the universe.&rdquo;</p>
+
+<p>Alison smiled humorlessly, and held up the notepad again.
+&ldquo;The tide? No. But it&rsquo;s the easiest thing in the
+world to dig a channel. To bias the random flow.&rdquo; She ran an
+animation of a sequence of tests that forced the far-site system to
+retreat across a small front-exploiting a &ldquo;beach
+head&rdquo; formed by chance, and then pushing on to undermine a
+succession of theorems. &ldquo;Industrial Algebra, though-I
+imagine-would be more interested in the reverse. Establishing a whole
+network of narrow channels of non-standard mathematics running deep
+into the realm of conventional arithmetic-which they could then deploy
+against theorems with practical consequences.&rdquo;</p>
+
+<p>I fell silent, trying to imagine tendrils of contradictory
+arithmetic reaching down into the everyday world. No doubt IA would aim
+for surgical precision-hoping to earn themselves a few billion dollars
+by corrupting the specific mathematics underlying certain financial
+transactions. But the ramifications would be impossible to predict-or
+control. There&rsquo;d be no way to limit the effect,
+spatially-they could target certain mathematical truths, but they
+couldn&rsquo;t confine the change to any one location. A few
+billion dollars, a few billion neurons, a few billion stars&hellip;
+a few billion people. Once the basic rules of counting were undermined,
+the most solid and distinct objects could be rendered as uncertain as
+swirls of fog. This was not a power I would have entrusted to a cross
+between Mother Theresa and Carl Friedrich Gauss.</p>
+
+<p>&ldquo;So what do we do? Erase the map-and just hope that
+IA never find the defect for themselves?&rdquo;</p>
+
+<p>&ldquo;No.&rdquo; Alison seemed remarkably calm-but
+then, her own long-cherished philosophy had just been confirmed, not
+razed to the ground-and she&rsquo;d had time on the flight from
+Z&Yuml;rich to think through all the Realmathematik.
+&ldquo;There&rsquo;s only one way to be sure that they can
+never use this. We have to strike first. We have to get hold of enough
+computing power to map the entire defect. And then we either iron the
+border flat, so it can&rsquo;t move-if you amputate all the
+pincers, there can be no pincer movements. Or-better yet, if we can get
+the resources-we push the border in, from all directions, and shrink
+the far-side system down to nothing.&rdquo;</p>
+
+<p>I hesitated. &ldquo;All we&rsquo;ve mapped so far is a
+tiny fragment of the defect We don&rsquo;t know how large the far
+side could be. Except that it can&rsquo;t be small-or the random
+fluctuations-would have swallowed it long ago. And it could go on
+forever; it could be infinite, for all we know.&rdquo;</p>
+
+<p>Alison gave me a strange look. &ldquo;You still
+don&rsquo;t get it, do you, Bruno? You&rsquo;re still thinking
+like a Platonist. The universe has only been around for fifteen billion
+years. It hasn&rsquo;t had time to create infinities. The far side
+can&rsquo;t go on forever-because somewhere beyond the defect,
+there are theorems that don&rsquo;t belong to any system. Theorems
+that have never been touched, never been tested, never been rendered
+true or false.</p>
+
+<p>&ldquo;And if we have to reach beyond the existing
+mathematics of the universe in order to surround the far
+side&hellip; then that&rsquo;s what we&rsquo;ll do.
+There&rsquo;s no reason why it shouldn&rsquo;t be possible-just
+so long as we get there first.&rdquo;</p>
+
+<p>When Alison took my place, at one in the morning, I was
+certain I wouldn&rsquo;t get any sleep. When she shook me awake
+three hours later, I still felt like I hadn&rsquo;t.</p>
+
+<p>I used my notepad to send a priming code to the data caches
+buried in our veins, and then we stood together side-by-side,
+left-shoulder-to-right-shoulder. The two chips recognized each
+other&rsquo;s magnetic and electrical signatures, interrogated each
+other to be sure-and then began radiating low power microwaves.
+Alison&rsquo;s notepad picked up the transmission, and merged the
+two complementary data streams. The result was still heavily
+encrypted-but after all the precautions we&rsquo;d taken so far,
+shifting the map into a hand-held computer felt about as secure as
+tattooing it onto our foreheads.</p>
+
+<p>A taxi was waiting for us downstairs. The People&rsquo;s
+Institute for Advanced Optical Engineering was in Minhang, a sprawling
+technology park some thirty kilometers south of the city center. We
+rode in silence through the gray predawn light, past the giant ugly
+tower blocks thrown up by the landlords of the new millennium, riding
+out the fever as the necrotraps and their cargo dissolved into our
+blood.</p>
+
+<p>As the taxi turned into an avenue lined with biotech and
+aerospace companies, Alison said, &ldquo;If anyone asks,
+we&rsquo;re Ph.D. students of Yuen&rsquo;s, testing a
+conjecture in algebraic topology.&rdquo;</p>
+
+<p>&ldquo;Now you tell me. I don&rsquo;t suppose you have
+any specific conjecture in mind? What if they ask us to
+elaborate?&rdquo;</p>
+
+<p>&ldquo;On algebraic topology? At five o&rsquo;clock in
+the morning?&rdquo;</p>
+
+<p>The Institute building was unimposing-sprawling black ceramic,
+three stories high-but there was a five-meter electrified fence, and
+the entrance was guarded by two armed soldiers. We paid the taxi driver
+and approached on foot. Yuen had supplied us with visitor&rsquo;s
+passes-complete with photographs and fingerprints. The names were our
+own; there was no point indulging in unnecessary deception. If we were
+caught out, pseudonyms would only make things worse.</p>
+
+<p>The soldiers checked the passes, then led us through an MRI
+scanner. I forced myself to breathe calmly as we waited for the
+results; in theory the scanner could have picked up our
+symbionts&rsquo; foreign proteins, lingering breakdown products
+from the necrotraps, and a dozen other suspicious trace chemicals. But
+it all came down to a question of what they were looking for; magnetic
+resonance spectra for billions of molecules had been catalogued-but no
+machine could hunt for all of them at once.</p>
+
+<p>One of the soldiers took me aside and asked me to remove my
+jacket. I fought down a wave of panic-and then struggled not to
+overcompensate: if I&rsquo;d had nothing to hide, I would still
+have been nervous. He prodded the bandage on my upper arm; the
+surrounding skin was still red and inflamed.</p>
+
+<p>&ldquo;What&rsquo;s this?&rdquo;</p>
+
+<p>&ldquo;I had a cyst there. My doctor cut it out, this
+morning.&rdquo;</p>
+
+<p>He eyed me suspiciously, and peeled back the adhesive
+bandage-with ungloved hands. I couldn&rsquo;t bring myself to look;
+the repair cream should have sealed the wound completely-at worst there
+should have been old, dried blood-but I could feel a faint liquid
+warmth along the line of the incision.</p>
+
+<p>The soldier laughed at my gritted teeth, and waved me away
+with an expression of distaste. I had no idea what he thought I might
+have been hiding-but I saw fresh red droplets beading the skin before I
+closed the bandage.</p>
+
+<p>Yuen Ting-fu was waiting for us in the lobby. He was a
+slender, fit looking man in his late sixties, casually dressed in
+denim. I let Alison ~ do all the talking: apologizing for our lack of
+punctuality (although we&rsquo;s weren&rsquo;t actually late),
+and thanking him effusively for granting us this precious opportunity
+to pursue our unworthy research. I stood back and tried to appear
+suitably deferential. Four soldiers looked on impassively; they
+didn&rsquo;t seem to find all this groveling excessive. And no
+doubt I would have been giddy with awe, if I really had been a student
+granted time here for some run-of-the-mill thesis.</p>
+
+<p>We followed Yuen as he strode briskly through a second
+checkpoint and scanner (this time, no one stopped us) then down a long
+corridor with a soft gray vinyl floor. We passed a couple of
+white-coated technicians, but they barely gave us a second glance.
+I&rsquo;d had visions of a pair of obvious foreigners attracting as
+much attention here as we would have wandering through a military
+base-but that was absurd. Half the runtime on Luminous was sold to
+foreign corporations-and because the machine was most definitely not
+linked to any communications network, commercial users had to come here
+in person. Just how often Yuen wangled free time for his
+students-whatever their nationality-was another question, but if he
+believed it was the best cover for us, I was in no position to argue. I
+only hoped he&rsquo;d planted a seamless trail of reassuring lies
+in the university records and beyond, in case the Institute
+administration decided to check up on us in any detail.</p>
+
+<p>We stopped in at the operations room, and Yuen chatted with
+the technicians. Banks of flatscreens covered one wall, displaying
+status histograms and engineering schematics. It looked like the
+control center for a small particle accelerator-which wasn&rsquo;t
+far from the truth.</p>
+
+<p>Luminous was, literally, a computer made of light. It came
+into existence when a vacuum chamber, a cube five meters wide, was
+filled with an elaborate standing wave created by three vast arrays of
+high-powered lasers. A coherent electron beam was fed into the
+chamber-and just as a finely machined grating built of solid matter
+could diffract a beam of light, a sufficiently ordered (and
+sufficiently intense) configuration of light could diffract a beam of
+matter.</p>
+
+<p>The electrons were redirected from layer to layer of the light
+cube, recombining and interfering at each stage, every change in their
+phase and intensity performing an appropriate computation-and the whole
+system could be reconfigured, nanosecond by nanosecond, into complex
+new &ldquo;hardware&rdquo; optimized for the calculations at
+hand. The auxilliary supercomputers controlling the laser arrays could
+design, and then instantly build, the perfect machine of light to carry
+out each particular stage of any program.</p>
+
+<p>It was, of course, fiendishly difficult technology, incredibly
+expensive and temperamental. The chance of ever putting it on the
+desktops of Tetris-playing accountants was zero, so nobody in the West
+had bothered to pursue it.</p>
+
+<p>And this cumbersome, unwieldy, impractical machine ran faster
+than every piece of silicon hanging off the Internet, combined.</p>
+
+<p>We continued on to the programming room. At first glance, it
+might have been the computing center in a small primary school, with
+half a dozen perfectly ordinary work stations sitting on white formica
+tables. They just happened to be the only six in the world that were
+hooked up to Luminous.</p>
+
+<p>We were alone with Yuen now-and Alison cut the protocol and
+just glanced briefly in his direction for approval, before hurriedly
+linking her notepad to one of the work stations and uploading the
+encrypted map. As she typed in the instructions to decode the file, all
+the images running through my head of what would have happened if
+I&rsquo;d poisoned the soldier at the gate receded into
+insignificance. We now had half an hour to banish the defect-and we
+still had no idea how far it extended.</p>
+
+<p>Yuen turned to me; the tension on his face betrayed his own
+anxieties, but he mused philosophically, &ldquo;If our arithmetic
+seems to fail for these large numbers-does it mean the mathematics, the
+ideal, is really flawed and mutable-or only that the behavior of matter
+always falls short of the ideal?&rdquo;</p>
+
+<p>I replied, &ldquo;If every class of physical objects
+&lsquo;falls short&rsquo; in exactly the same way-whether
+it&rsquo;s boulders or electrons or abacus beads&hellip; what
+is it that their common behavior is obeying-or defining-if not the
+mathematics?&rdquo;</p>
+
+<p>He smiled, puzzled. &ldquo;`Alison seemed to think you
+were a Platonist.&rdquo;</p>
+
+<p>&ldquo;Lapsed. Or&hellip; defeated. I don&rsquo;t
+see what it can mean to talk about standard number theory still being
+true for these statements-in some vague Platonic sense-if no real
+objects can ever reflect that truth.&rdquo;</p>
+
+<p>&ldquo;We can still imagine it. We can still contemplate
+the abstraction. It&rsquo;s only the physical act of validation
+that must fall through. Think of transfinite arithmetic: no one can
+physically test the properties of Cantor&rsquo;s infinities, can
+they? We can only reason about them from afar.&rdquo;</p>
+
+<p>I didn&rsquo;t reply. Since the revelations in Hanoi,
+I&rsquo;d pretty much lost faith in my power to &ldquo;reason
+from afar&rdquo; about anything I couldn&rsquo;t personally
+describe with Arabic numerals on a single sheet of paper. Maybe
+Alison&rsquo;s idea of &ldquo;local truth&rdquo; was the
+most we could hope for; anything more ambitious was beginning to seem
+like the comic-book &ldquo;physics&rdquo; of swinging a rigid
+beam ten billion kilometers long around your head, and predicting that
+the far end would exceed the speed of light.</p>
+
+<p>An image blossomed on the work station screen: it began as the
+familiar map of the defect-but Luminous was already extending it at a
+mind-boggling rate. Billions of inferential loops were being spun
+around the margins: some confirming their own premises, and thus
+delineating regions where a single, consistent mathematics held
+sway&hellip; others skewing into self-contradiction, betraying a
+border crossing. I tried to imagine what it would have been like to
+follow one of those Mobius-strips of deductive logic in my head; there
+were no difficult concepts involved, it was only the sheer size of the
+statements that made that impossible. But would the contradictions have
+driven me into gibbering insanity-or would I have found every step
+perfectly reasonable, and the conclusion simply unavoidable? Would I
+have ended up calmly, happily conceding: Two and two make five?</p>
+
+<p>As the map grew-smoothly re-scaled to keep it fitting on the
+screen, giving the unsettling impression that we were retreating from
+the alien mathematics as fast as we could, and only just avoiding being
+swallowed-Alison sat hunched forward, waiting for the big picture to be
+revealed. The map portrayed the network of statements as an intricate
+lattice in three dimensions (a crude representational convention, but
+it was as good as any other). So far, the border between the regions
+showed no sign of overall curvature-just variously sized random
+incursions in both directions. For all we knew, it was possible that
+the far-side mathematics enclosed the near side completely-that the
+arithmetic we&rsquo;d once believed stretched out to infinity was
+really no more than a tiny island in an ocean of contradictory truths.</p>
+
+<p>I glanced at Yuen; he was watching the screen with undisguised
+pain. He said, &ldquo;I read your software, and I thought: sure,
+this looks fine-but some glitch on your machines is the real
+explanation. Luminous will soon put you right.&rdquo;</p>
+
+<p>Alison broke in jubilantly, &ldquo;Look, it&rsquo;s
+turning!&rdquo;</p>
+
+<p>She was right. As the scale continued to shrink, the random
+fractal meanderings of the border were finally being subsumed by an
+overall convexity-a convexity of the far side. It was as if the
+viewpoint was backing away from a giant spiked sea-urchin. Within
+minutes, the map showed a crude hemisphere, decorated with elaborate
+crystalline extrusions at every scale. The sense of observing some
+palaeomathematical remnant was stronger than ever, now: this bizarre
+cluster of theorems really did look as if it had exploded out from some
+central premise into the vacuum of unclaimed truths, perhaps a
+billionth of a second after the Big Bang-only to be checked by an
+encounter with our own mathematics.</p>
+
+<p>The hemisphere slowly extended into a three-quarters
+sphere&hellip; and then a spiked whole. The far side was bounded,
+finite. It was the island, not us.</p>
+
+<p>Alison laughed uneasily. &ldquo;Was that true before we
+started-or did we just make it true?&rdquo; Had the near side
+enclosed the far side for billions of years-or had Luminous broken new
+ground, actively extending the near side into mathematical territory
+that had never been tested by any physical system before?</p>
+
+<p>We&rsquo;d never know. We&rsquo;d designed the
+software to advance the mapping along a front in such a way that any
+unclaimed statements would be instantly recruited into the near side.
+If we&rsquo;d reached out blindly, far into the void, we might have
+tested an isolated statement-and inadvertently spawned a whole new
+alternative mathematics to deal with.</p>
+
+<p>Alison said, &ldquo;Okay-now we have to decide. Do we try
+to seal the border-or do we take on the whole structure?&rdquo; The
+software, I knew, was busy assessing the relative difficulty of the
+tasks.</p>
+
+<p>Yuen replied at once, &ldquo;Seal the border, nothing
+more. You mustn&rsquo;t destroy this.&rdquo; He turned to me,
+imploringly. &ldquo;Would you smash up a fossil of
+Australopithecus? Would you wipe the cosmic background radiation out of
+the sky? This may shake the foundations of all my beliefs-but it
+encodes the truth about our history. We have no right to obliterate it,
+like vandals.&rdquo;</p>
+
+<p>Alison eyed me nervously. What was this-majority rule? Yuen
+was the only one with any power here; he could pull the plug in an
+instant. And yet it was clear from his demeanor that he wanted a
+consensus-he wanted our moral support for any decision.</p>
+
+<p>I said cautiously, &ldquo;If we smooth the border,
+that&rsquo;ll make it literally impossible for IA to exploit the
+defect, won&rsquo;t it?&rdquo;</p>
+
+<p>Alison shook her head. &ldquo;We don&rsquo;t know
+that. There may be a quantum-like component of spontaneous defections,
+even for statements that appear to be in perfect equilibrium.&rdquo;</p>
+
+<p>Yuen countered, &ldquo;Then there could be spontaneous
+defections anywhere-even far from any border. Erasing the whole
+structure will guarantee nothing.&rdquo;</p>
+
+<p>&ldquo;It will guarantee that IA won&rsquo;t find it!
+Maybe pin-point defections do occur, all the time-but the next time
+they&rsquo;re tested, they&rsquo;ll always revert.
+They&rsquo;re surrounded by explicit contradictions, they have no
+chance of getting a foothold. You can&rsquo;t compare a few
+transient glitches with this&hellip; armory of
+counter-mathematics!&rdquo;</p>
+
+<p>The defect bristled on the screen like a giant caltrap. Alison
+and Yuen both turned to me expectantly. As I opened my mouth, the work
+station chimed. The software had examined the alternatives in detail:
+destroying the entire far side would take Luminous twenty-three minutes
+and seventeen seconds-about a minute less than we had left, Sealing the
+border would take more than an hour.</p>
+
+<p>I said, &ldquo;That can&rsquo;t be right.&rdquo;</p>
+
+<p>Alison groaned. &ldquo;But it is! There&rsquo;s random
+interference going on at the border from other systems all the time-and
+doing anything finicky there means coping with that noise, fighting it.
+Charging ahead and pushing the border inward is different: you can
+exploit the noise to speed the advance. It&rsquo;s not a question
+of dealing with a mere surface versus dealing with a whole volume.
+It&rsquo;s more like&hellip; trying to carve an island into an
+absolutely perfect circle, while waves are constantly crashing on the
+beach-versus bulldozing the whole thing into the ocean.&rdquo;</p>
+
+<p>We had thirty seconds to decide-or we&rsquo;d be doing
+neither today. And maybe Yuen had the resources to keep the map safe
+from IA, while we waited a month or more for another session on
+Luminous-but I wasn&rsquo;t prepared to live with that kind of
+uncertainty.</p>
+
+<p>&ldquo;I say we get rid of the whole thing. Anything less
+is too dangerous. Future mathematicians will still be able to study the
+map-and if no one believes that the defect itself ever really existed,
+that&rsquo;s just too bad. IA is too close. We can&rsquo;t risk
+it.&rdquo;</p>
+
+<p>Alison had one hand poised above the keyboard. I turned to
+Yuen; he was staring at the floor, with an anguished expression.
+He&rsquo;d let us state our views-but in the end, it was his
+decision.</p>
+
+<p>He looked up, and spoke sadly but decisively.</p>
+
+<p>&ldquo;Okay. Do it.&rdquo;</p>
+
+<p>Alison hit the key-with about three seconds to spare. I sagged
+into my chair, light headed with relief.</p>
+
+<p>We watched the far side shrinking. The process
+didn&rsquo;t look quite as crass as bulldozing an island-more like
+dissolving some quirkily beautiful crystal in acid. Now that the danger
+was receding before our eyes, though, I was beginning to suffer faint
+pangs of regret. Our mathematics had coexisted with this strange
+anomaly for fifteen billion years, and it shamed me to think that
+within months of its discovery, we&rsquo;d backed ourselves into a
+corner where we&rsquo;d had no choice but to destroy it.</p>
+
+<p>Yuen seemed transfixed by the process. &ldquo;So are we
+breaking the laws of physics-or enforcing them?&rdquo;</p>
+
+<p>Alison said, &ldquo;Neither. We&rsquo;re merely
+changing what the laws imply.&rdquo;</p>
+
+<p>He laughed softly. &ldquo; &lsquo;Merely.&rsquo;
+For some esoteric set of complex systems, we&rsquo;re rewriting the
+high-level rules of their behavior. Not including the human brain, I
+hope.&rdquo; &lsquo;</p>
+
+<p>My skin crawled. &ldquo;Don&rsquo;t you think
+that&rsquo;s&hellip; unlikely?&rdquo;</p>
+
+<p>&ldquo;I was joking.&rdquo; He hesitated, then added
+soberly, &ldquo;Unlikely for humans-but someone could be relying on
+this, somewhere. We might be destroying the whole basis of their
+existence: certainties as fundamental to them as a child&rsquo;s
+multiplication tables are to us.&rdquo;</p>
+
+<p>Alison could barely conceal her scorn. &ldquo;This is junk
+mathematics-a relic of a pointless accident. Any kind of life that
+evolved from simple to complex forms would have no use for it. Our
+mathematics works for&hellip; rocks, seeds, animals in the herd,
+members of the tribe. This only kicks in beyond the number of particles
+in the universe-&rdquo;</p>
+
+<p>&ldquo;Or smaller systems that represent those
+numbers,&rdquo; I reminded her.</p>
+
+<p>&ldquo;And you think life somewhere might have a burning
+need to do nonstandard trans-astronomical arithmetic, in order to
+survive? I doubt that very much.&rdquo;</p>
+
+<p>We fell silent. Guilt and relief could fight it out later, but
+no one suggested halting the program. In the end, maybe nothing could
+outweigh the havoc the defect would have caused if it had ever been
+harnessed as a weapon-and I was looking forward to composing a long
+message to Industrial Algebra, informing them of precisely what
+we&rsquo;d done to the object of their ambitions.</p>
+
+<p>Alison pointed to a corner of the screen.
+&ldquo;What&rsquo;s that?&rdquo; A narrow dark spike
+protruded from the shrinking cluster of statements. For a moment I
+thought it was merely avoiding the near side&rsquo;s assault-but it
+wasn&rsquo;t. It was slowly, steadily growing longer.</p>
+
+<p>&ldquo;Could be a bug in the mapping algorithm.&rdquo;
+I reached for the keyboard and zoomed in on the structure. In close-up,
+it was several thousand statements wide. At its border,
+Alison&rsquo;s program could be seen in action, testing statements
+in an order designed to force tendrils of the near side ever deeper
+into the interior. This slender extrusion, ringed by contradictory
+mathematics, should have been corroded out of existence in a fraction
+of a second. Something was actively countering the assault,
+though-repairing every trace of damage before it could spread.</p>
+
+<p>&ldquo;If IA have a bug here-&rdquo; I turned to Yuen.
+&ldquo;They couldn&rsquo;t take on Luminous directly, so they
+couldn&rsquo;t stop the whole far side shrinking-but a tiny
+structure like this&hellip; what do you think? Could they stabilize
+it?&rdquo;</p>
+
+<p>&ldquo;Perhaps,&rdquo; he conceded. &ldquo;Four or
+five hundred top-speed work stations could do it.&rdquo;</p>
+
+<p>Alison was typing frantically on her notepad. She said,
+&ldquo;I&rsquo;m writing a patch to identify any systematic
+interference-and divert all our resources against it.&rdquo; She
+brushed her hair out of her eyes. &ldquo;Look over my shoulder,
+will you, Bruno? Check me as I go.&rdquo;</p>
+
+<p>&ldquo;Okay.&rdquo; I read through what
+she&rsquo;d written so far. &ldquo;You&rsquo;re doing fine.
+Stay calm.&rdquo; Her hands were trembling.</p>
+
+<p>The spike continued to grow steadily. By the time the patch
+was ready, the map was re-scaling constantly to fit it on the screen.</p>
+
+<p>Alison triggered the patch. An overlay of electric blue
+appeared along the spike, flagging the concentration of computing
+power-and the spike abruptly froze.</p>
+
+<p>I held my breath, waiting for IA to notice what we&rsquo;d
+done-and switch their resources elsewhere? If they did, no second spike
+would appear-they&rsquo;d never get that far-but the blue marker on
+the screen would shift to the site where they&rsquo;d regrouped and
+tried to make it happen.</p>
+
+<p>But the blue glow didn&rsquo;t move from the existing
+spike. And the spike didn&rsquo;t vanish under the weight of
+Luminous&rsquo;s undivided efforts.</p>
+
+<p>Instead, it began to grow again, slowly.</p>
+
+<p>Yuen looked ill. &ldquo;This is not Industrial Algebra.
+There&rsquo;s no computer on the planet-&rdquo;</p>
+
+<p>Alison laughed derisively. &ldquo;What are you saying now?
+Aliens who need the far side are defending it? Aliens where? Nothing
+we&rsquo;ve done has had time to reach even&hellip;
+Jupiter.&rdquo; There was an edge of hysteria in her voice.</p>
+
+<p>&ldquo;Have you measured how fast the changes propagate?
+Do you know, for certain, that they can&rsquo;t travel faster than
+light-with the far-side mathematics undermining the logic of
+relativity?&rdquo;</p>
+
+<p>I said, &ldquo;Whoever it is, they&rsquo;re not
+defending all their borders. They&rsquo;re putting everything
+they&rsquo;ve got into the spike.&rdquo;</p>
+
+<p>&ldquo;They&rsquo;re aiming at something. A specific
+target.&rdquo; Yuen reached over Alison&rsquo;s shoulder for
+the keyboard. &ldquo;We&rsquo;re shutting this down. Right
+now.&rdquo;</p>
+
+<p>She turned on him, blocking his way. &ldquo;Are you crazy?
+We&rsquo;re almost holding them off! I&rsquo;ll rewrite the
+program, fine-tune it, get an edge in efficiency-&rdquo;</p>
+
+<p>&ldquo;No! We stop threatening them, then see how they
+react. We don&rsquo;t know what harm we&rsquo;re
+doing-&rdquo;</p>
+
+<p>He reached for the keyboard again.</p>
+
+<p>&nbsp;</p>
+
+<p>Alison jabbed him in the throat with her elbow, hard. He
+staggered backward, gasping for breath, then crashed to the floor,
+bringing a chair down on top him. She hissed at me,
+&ldquo;Quick-shut him up!&rdquo;</p>
+
+<p>I hesitated, loyalties fracturing, his idea had sounded
+perfectly sane to me. But if he started yelling for security-</p>
+
+<p>I crouched down over him, pushed the chair aside, then clasped
+my hand over his mouth, forcing his head back with pressure on the
+lower jaw. We&rsquo;d have to tie him up-and then try brazenly
+marching out of the building without him. But he&rsquo;d be found
+in a matter of minutes. Even if we made it past the gate, we were
+screwed.</p>
+
+<p>Yuen caught his breath and started struggling; I clumsily
+pinned his arms with my knees. I could hear Alison typing, a ragged
+staccato, tried to get a glimpse of the work station screen, but I
+couldn&rsquo;t turn that far without taking my weight off Yuen.</p>
+
+<p>I said, &ldquo;Maybe he&rsquo;s right-maybe we should
+pull back, and see what happens.&rdquo; If the alterations could
+propagate faster than light&hellip; how many distant civilizations
+might have felt the effects of what we&rsquo;d done? Our first
+contact with extraterrestrial life could turn out to be an attempt to
+obliterate mathematics that they viewed as&hellip; what? A precious
+resource? A sacred relic? An essential component of their entire world
+view?</p>
+
+<p>The sound of typing stopped abruptly. &ldquo;Bruno? Do you
+feel-?&rdquo;</p>
+
+<p>&ldquo;What?&rdquo;</p>
+
+<p>Silence.</p>
+
+<p>&ldquo;What?&rdquo;</p>
+
+<p>Yuen seemed to have given up the fight. I risked turning
+around.</p>
+
+<p>Alison was hunched forward, her face in her hands. On the
+screen the spike had ceased its relentless linear growth-but now an
+elaborate. dendritic structure had blossomed at its tip. I glanced down
+at Yuen; he seemed dazed, oblivious to my presence. I took my hand from
+his mouth warily. He lay there placidly, smiling faintly, eyes scanning
+something I couldn&rsquo;t see.</p>
+
+<p>I climbed to my feet. I took Alison by the shoulders and shook
+he gently; her only response was to press her face harder into her
+hands. The spike&rsquo;s strange flower was still growing but it
+wasn&rsquo;t spreading out into new territory; it was sending
+narrow shoots back in on itself crisscrossing the same region again and
+again with ever finer structure</p>
+
+<p>Weaving a net? Searching for something?</p>
+
+<p>It hit me with a jolt of clarity more intense than anything
+I&rsquo;d felt since childhood. It was like reliving the moment
+when the whole concept numbers had finally snapped into place-but with
+an adult&rsquo;s understanding of everything it opened up,
+everything it implied. It was a lightning bolt revelation-but there was
+no taint of mystical confusion: no opiate haze of euphoria, no
+pseudo-sexual rush. In the clean-lined logic of the simplest concepts,
+I saw and understood exactly how the world worked-</p>
+
+<p>-except that it was all wrong, it was all false, it was all
+impossible.</p>
+
+<p>Quicksand.</p>
+
+<p>Assailed by vertigo, I swept my gaze around the room-counting
+frantically: Six work stations. Two people. Six chairs. I grouped the
+work stations: three sets of two, two sets of three. One and five, two
+and four; four and two, five and one.</p>
+
+<p>I weaved a dozen cross-checks for consistency-for
+sanity&hellip; but everything added up.</p>
+
+<p>They hadn&rsquo;t stolen the old arithmetic;
+they&rsquo;d merely blasted the new one into my head, on top of it.</p>
+
+<p>Whoever had resisted our assault with Luminous had reached
+down with the spike and rewritten our neural metamathematics-the
+arithmetic that underlay our own reasoning about arithmetic-enough to
+let us glimpse what we&rsquo;d been trying to destroy.</p>
+
+<p>Alison was uncommunicative, but she was breathing slowly and
+steadily. Yuen seemed fine, lost in a happy reverie. I relaxed
+slightly, and began trying to make sense of the flood of far-side
+arithmetic surging through my brain.</p>
+
+<p>On their own terms, the axioms were&hellip; trivial,
+obvious. I could see that they corresponded to elaborate statements
+about trans-astronomical integers, but performing an exact translation
+was far beyond me-and thinking about the entities they described in
+terms of the huge integers they represented was a bit like thinking
+about pi or the square root of two in terms of the first ten thousand
+digits of their decimal expansion: it would be missing the point
+entirely. These alien &ldquo;numbers&rdquo;-the basic objects
+of the alternative arithmetic-had found a way to embed themselves in
+the integers, and to relate to each other in a simple, elegant way-and
+if the messy corollaries they implied upon translation contradicted the
+rules integers were supposed to obey&hellip; well, only a small,
+remote patch of obscure truths had been subverted,</p>
+
+<p>Someone touched me on the shoulder. I started-but Yuen was
+beaming amiably, all arguments and violence forgotten.</p>
+
+<p>He said, &ldquo;Lightspeed is not violated. All the logic
+that requires that remains intact.&rdquo; I could only take him at
+his word; the result would have taken me hours to prove. Maybe the
+aliens had done a better job on him-or maybe he was just a superior
+mathematician in either system.</p>
+
+<p>&ldquo;Then&hellip; where are they?&rdquo; At
+lightspeed, our attack on the far side could not have been felt any
+further away than Mars-and the strategy used to block the corrosion of
+the spike would have been impossible with even a few seconds&rsquo;
+time lag.</p>
+
+<p>&ldquo;The atmosphere?&rdquo;</p>
+
+<p>&ldquo;You mean-Earth&rsquo;s?&rdquo;</p>
+
+<p>&ldquo;Where else? Or maybe the oceans.&rdquo;</p>
+
+<p>I sat down heavily. Maybe it was no stranger than any
+conceivable alternative, but I still balked at the implications.</p>
+
+<p>Yuen said, &ldquo;To us, their structure
+wouldn&rsquo;t look like &lsquo;structure&rsquo; at all.
+The simplest unit might involve a group of thousands of
+atoms-representing a trans-astronomical number-not necessarily even
+bonded together in any conventional way, but breaking the normal
+consequences of the laws of physics, obeying a different set of
+high-level rules that arise frorn the alternative mathematics. People
+have often mused about the chances of intelligence being coded into
+long-lived vortices on distant gas giants&hellip; but these
+creatures won&rsquo;t be in hurricanes or tornadoes.
+They&rsquo;ll be drifting in the most innocuous puffs of
+air-invisible as neutrinos.</p>
+
+<p>&ldquo;Unstable-&rdquo;</p>
+
+<p>&ldquo;Only according to our mathematics. Which does not
+apply.&rdquo;</p>
+
+<p>Alison broke in suddenly, angrily. &ldquo;Even if all of
+this is true-where does it get us? Whether the defect supports a whole
+invisible ecosystem or not-LA will still find it, and use it, in
+exactly the same way.&rdquo;</p>
+
+<p>For a moment I was dumbstruck. We were facing the prospect of
+sharing the planet with an undiscovered civilization-and all she could
+think about was IA&rsquo;s grubby machinations?</p>
+
+<p>She was absolutely right, though. Long before any of these
+extravagant fantasies could be proved or disproved, IA could still do
+untold harm.</p>
+
+<p>I said, &ldquo;Leave the mapping software running-but shut
+down the shrinker.&rdquo;</p>
+
+<p>She glanced at the screen. &ldquo;No need.
+They&rsquo;ve overpowered it-or undermined its
+mathematics.&rdquo; The far side was back to its original size.</p>
+
+<p>&ldquo;Then there&rsquo;s nothing to lose. Shut it
+down.&rdquo;</p>
+
+<p>She did. No longer under attack, the spike began to reverse
+its growth. I felt a pang of loss as my limited grasp of the far-side
+mathematics suddenly evaporated; I tried to hold on, but it was like
+clutching at air.</p>
+
+<p>When the spike had retracted completely, I said,
+&ldquo;Now we try doing an Industrial Algebra. We try bringing the
+defect closer.&rdquo;</p>
+
+<p>We were almost out of time, but it was easy enough-in thirty
+seconds, we rewrote the shrinking algorithm to function in reverse.</p>
+
+<p>Alison programmed a function key with the commands to revert
+to the original version-so that if the experiment backfired, one
+keystroke would throw the full weight of Luminous behind a defense of
+the near side again.</p>
+
+<p>Yuen and I exchanged nervous glances. I said, &ldquo;Maybe
+this wasn&rsquo;t such a good idea.&rdquo;</p>
+
+<p>Alison disagreed. &ldquo;We need to know how
+they&rsquo;ll react to this. Better we find out now than leave it
+to IA.&rdquo;</p>
+
+<p>She started the program running.</p>
+
+<p>The sea-urchin began to swell, slowly. I broke out in a sweat.
+The farsiders hadn&rsquo;t harmed us, so far-but this felt like
+tugging hard at a door that you really, badly, didn&rsquo;t want to
+see thrown open.</p>
+
+<p>A technician poked her head into the room and announced
+cheerfully, &ldquo;Down for maintenance in two minutes!&rdquo;</p>
+
+<p>Yuen said, &ldquo;I&rsquo;m sorry, there&rsquo;s
+nothing-&rdquo;</p>
+
+<p>The whole far side turned electric blue. Alison&rsquo;s
+original patch had detected a systematic intervention.</p>
+
+<p>We zoomed in. Luminous was picking off vulnerable statements
+of the near side-but something else was repairing the damage.</p>
+
+<p>I let out a strangled noise that might have been a cheer.
+Alison smiled serenely. She said, &ldquo;I&rsquo;m satisfied.
+IA don&rsquo;t stand a chance.&rdquo;</p>
+
+<p>Yuen mused, &ldquo;Maybe they have a reason to defend the
+status quo-maybe they rely on the border itself, as much as the far
+side.&rdquo;</p>
+
+<p>Alison shut down our reversed shrinker. The blue glow
+vanished; both sides were leaving the defect alone. And there were a
+thousand questions we all wanted answered-but the technicians had
+thrown the master switch, and Luminous itself had ceased to exist.</p>
+
+<p>The sun was breaking through the skyline as we rode back into
+the city. As we pulled up outside the hotel, Alison started shaking and
+sobbing. I sat beside her, squeezing her hand. I knew she&rsquo;d
+felt the weight of what might have happened, all along, far more than I
+had.</p>
+
+<p>I paid the driver, and then we stood on the street for a
+while, silently watching the cyclists go by, trying to imagine how the
+world would change as it tried to embrace this new contradiction
+between the exotic and the mundane, the pragmatic and the Platonic, the
+visible and the invisible.</p>
+
+</body>
+</html>
