@@ -114,8 +114,9 @@ td {text-align:left;}
 li{list-style-position: inside;}
 
 
-.next-meeting td{ background-color:lightgreen;text-shadow:rgba(0,0,0,0.498039) 0px 0px 5px;font-size:1.4em;}
-.future-meeting td{ background-color:powderblue;color:rgba(0,0,0,0.6);}
+.next-meeting td{ background-color:#9FC4E7;text-shadow:rgba(0,0,0,0.498039) 0px 0px 5px;font-size:1.4em;}
+.future-meeting td{ background-color:#C2DDB6;}
+.previous-meeting td{ background-color:#F8CB9C;color:rgba(0,0,0,0.6);}
 
 .ib {display:inline-block;}
 
